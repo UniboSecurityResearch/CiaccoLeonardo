@@ -1,13 +1,10 @@
-# Template for Unibo thesis
-_Change this!_
+**Author**: Leonardo Ciacco
 
-**Author**: $NAME $FAMILYNAME
+**Year**: 2025
 
-**Year**: 2023
+**Title**: Analysis of major cybersecurity breach events and correlation with their financial consequences, including stock market impact
 
-**Title**: Unibo Template
-
-**Description**: This is a template for the Unibo thesis.
+**Description**: ----
 
 ## How to use the project
 If present, write here how to use your project.
