@@ -125,6 +125,7 @@ Le linee guida per la stesura della Tesi di Laurea sono al seguente link \href{h
 \section{Prima Sezione} %crea la sezione
 Questa \`e la prima sezione.
 
+
 Ora vediamo un elenco numerato: %crea un elenco numerato
 \begin{enumerate}
 \item primo oggetto
@@ -152,6 +153,7 @@ Ora vediamo un elenco puntato:
 
 \section{Altra Sezione}
 Vediamo un elenco descrittivo:
+
 \begin{description} %crea un elenco descrittivo
   \item[OGGETTO1] prima descrizione;
   \item[OGGETTO2] seconda descrizione;
@@ -188,7 +190,8 @@ $(3,1)$ & $(3,2)$ & $(3,3)$\\
 
 
 \section{Altra Sezione}\label{sec:prova}%posso mettere le label anche alle section
-In questa sezione voglio fare un riferimento alla bibliografia: questo \`e il mio riferimento \cite{gori2022metrics}.
+In questa sezione voglio fare un riferimento alla bibliografia: questo \`e il mio riferimento 
+prova cit \cite{enisa_threat_landscape}
 
 \subsection{Listati dei programmi}
 \subsubsection{Primo Listato}
@@ -203,8 +206,8 @@ Quando lo uso è meglio che disattivi il Wrap del WinEdt
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SCENARI APPLICATIVI E STATO DELL'ARTE
-\chapter{Scenari applicativi e stato dell'arte}
+% STATO DELL'ARTE
+\chapter{Analisi dello stato dell'arte e del contesto}
 Cosa stiamo affrontando, p.e. una tesi che propone un attacco a HTTPS dovrebbe spiegare bene come funziona la parte di HTTPS attaccata e quali sono le limitazioni.
 
 
@@ -213,8 +216,8 @@ Cosa stiamo affrontando, p.e. una tesi che propone un attacco a HTTPS dovrebbe s
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ANALISI PROGETTUALE
-\chapter{Analisi progettuale}
+% Attacchi e conseguenze finanziarie
+\chapter{Attacchi e conseguenze finanziarie}
 Cosa vogliamo raggiungere, perch\'e e quali sono state le vostre scelte per lo sviluppo ``su carta".
 
 
@@ -223,10 +226,10 @@ Cosa vogliamo raggiungere, perch\'e e quali sono state le vostre scelte per lo s
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% IMPLEMENTAZIONE
-\chapter{Implementazione}
-Come abbiamo implementato il programma, se ci sono state scelte particolari o punti particolarmente ostici che sono stati superati. Se ci sono state difficolt\`a insormontabili vanno spiegate.\\
-\`E necessario inserire estratti di codice, tabelle o immagini nella tesi solamente quando questi aiutano la comprensione dell'argomento. Se pensate di stare scrivendo una parte molto tecnica e poco comprensibile al lettore, aiutatevi con le immagini o con il codice. Per inserire estratti di codice rifarsi all'esempio seguente oppure \`e possibile usare il package  \href{https://www.overleaf.com/learn/latex/Code\_listing}{listing}.
+% Analisi dettagliata del precedente capitolo 
+\chapter{Analisi dettagliata del precedente capitolo}
+Questo sar\`a il capitolo pi\`u importante dove individua trend sugli attacchi e sulle conseguenze.\\
+\\href{https://www.overleaf.com/learn/latex/Code\_listing}{listing}.
 \begin{minted}{c}
 #include <stdio.h>
 int main() {
@@ -256,6 +259,7 @@ Descrivete e inserite qui gli esperimenti effettuati e i dati raccolti. Se avete
 \chapter{Conclusioni e sviluppi futuri}
 
 Da scrivere alla fine, un breve riassunto di cosa si \`e affrontato, i risultati (se quanto indicato nell'introduzione come obiettivo \`e stato raggiunto) e come \`e possibile continuare la tesi (p.e. se qualcosa non \`e stato affrontato per motivi di tempo o limitazioni hardware).
+
 
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
