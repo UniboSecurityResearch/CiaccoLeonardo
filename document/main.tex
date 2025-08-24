@@ -12,6 +12,7 @@
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{newlfont}
+\usepackage{textcomp}
 %librerie matematiche
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -281,15 +282,15 @@ Gli attacchi sono di vario tipo, e sono avvenuti tra il 2011 e il 2024 l'analisi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Attacchi e conseguenze finanziarie
 \chapter{Attacchi e conseguenze finanziarie}
-Nota: la maggior parte dei grafici proviene da \href{https://www.macrotrends.net/}.
-\section{Epsilon data breach (2011)}
-\subsection{Descrizione}
+Nota: la maggior parte dei grafici proviene da \href{https://www.macrotrends.net/}{macrotrends}.
+%\section{Epsilon data breach (2011)}
+%\subsection{Descrizione}
 
-\subsection{Impatto diretto}
+%\subsection{Impatto diretto}
 
-\subsection{Impatto indiretto}
+%\subsection{Impatto indiretto}
 
-\subsection{Note}
+%\subsection{Note}
 \section{Sony Playstation Network (2011)}
 \subsection{Descrizione}
 Sony dichiar\`o che tra il 17 e il 19 aprile 2011 avvene un importante \textit{data breach} , a seguito di cui disabilit\`o per una settimana il servizio online Playstation Network. L'attacco port\`o al furto di dati sensibili riguardanti 77 milioi di account\cite{Sony_PNT_guardian}\cite{Sony_pnt}.\\
@@ -298,19 +299,19 @@ Sony sub\`i diverse conseguenze legali, che unite agli obblighi di miglioramento
 \subsection{Impatto indiretto}
 Come si pu\`ovedere dalla figura ... e nelle fonti \cite{Sony_pnt} la compagnia sub\`i, nei primi giorni, un calo del valore delle azioni ben superiore al 3\%.\\
 
-\begin{figure}[h] 
+\begin{figure}[H] 
 \begin{center} 
 \includegraphics[width=10cm]{figures/sony_2011_shortTerm.png} 
 \caption[Grafico Sony PSN short]{Impatto a breve termine Sony Playstation Network Outage}\label{fig:pnt1}
 \end{center}
 \end{figure}
 
-A seguito inizia un periodo di contrazione che, possiamo osservare, porta i valori delle azioni da pi\`u di \$5 nel periodo antecedente alla crisi, fino a scendere sotto i \$2 nel 2013 (adjusted). Associare la parabola discendente esclusivamente all'attacco \`e forse esagerato, \`e sicuramente un fattore rilenvante.\\ 
+A seguito inizia un periodo di contrazione che, possiamo osservare, porta i valori delle azioni da pi\`u di \$5 nel periodo antecedente alla crisi, fino a scendere sotto i \$2 nel 2013 (adjusted). \\Associare la parabola discendente esclusivamente all'attacco \`e forse esagerato, ci\`o non toglie che si tratti sicuramente di un fattore rilenvante.\\ 
 
-\begin{figure}[h] 
+\begin{figure}[H] 
 \begin{center} 
 \includegraphics[width=10cm]{figures/sony_2011_longTerm.png} 
-\caption[Grafico Sony PSN short]{Impatto a lungo termine Sony Playstation Network Outage}\label{fig:pnt2}
+\caption[Grafico Sony PSN long]{Impatto a lungo termine Sony Playstation Network Outage}\label{fig:pnt2}
 \end{center}
 \end{figure}
 
@@ -319,65 +320,201 @@ A seguito inizia un periodo di contrazione che, possiamo osservare, porta i valo
 Le comunicazioni furono tardive e poco precise, gli azionisti ebbero notizia del motivo per cui Playstation Network era disabilitato solo 7 giorni dopo, e i comunicati ai clienti non furono da meno, alimentando malcontento e sfiducia nelle capacit\`a dell'azienda\cite{Sony_pnt}.
 \section{Target (2013)}
 \subsection{Descrizione}
-
+Il caso di \textit{data breach} affrontato riguarda l'azienda di distribuzione Target, seconda, negli Stati Uniti, solamente a Walmart, e l'attacco che si \`e concluso con il furto di  informazioni, comprese informazioni di pagamento e carte di credito, di 70 milioni di clienti.\\
+Prime avvisaglie dell'ingresso di un malware nella rete arrivano il 30 novembre 2013, probabilmente avvenuto per via dell'utilizzo di passwords troppo semplici nei server aziendali, ma \`e dal 12 dicembre che, in seguito alla notifica del Dipartimento di Giustizia, iniziano le indagini congiunte. Verificatane l'entit\`a, la notizia viene resa di dominio pubblico il 19 dicembre 2013\cite{Target}.\\
 \subsection{Impatto diretto}
-
+Da quanto dichiarato nei bilanci SEC (\textit{Securities and Exchange Commission}), le spese dirette, tolti \$90 milioni coperti da assicurazione, ammontano a \$200 milioni\cite{Target}.
 \subsection{Impatto indiretto}
+Sebbene nei giorni immediatamente successivi ci sia stato un picco verso il basso di -2.2\% \ref{fig:tgt1}, con momenti di ulteriore discesa, e sebbene la crescita sia stata praticamente neutra per un anno, dalla fine del 2014 l'azienda ha recuperato parte della crescita inespressa fino ad allora \ref{fig:tgt2}. Ad aiutare \`e stata l'ottima immagine che ha nei confronti dei clienti e la fiducia dei pi\`u affezionati ad un marchio decisamente forte.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/target_short.png} 
+\caption[Grafico Target short]{Impatto a breve termine Target data breach}\label{fig:tgt1}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center} 
+\includegraphics[width=10cm]{figures/target_long.png} 
+\caption[Grafico Target long]{Impatto a lungo termine Target data breach}\label{fig:tgt2}
+\end{center}
+\end{figure}
 
-\subsection{Note}
 \section{Sony Pictures (2014)}
-\subsection{Descrizione}
 
+\subsection{Descrizione}
+Sony Pictures Entertainment viene colpito da un attacco informatico di tipo \textit{data breach} a fine novembre 2014, vengono rilasciati 40GB di informazioni che, a detta degli attaccanti, fanno parte di un furto del volume di 100TB. Dentro vi troviamo pi\`u di 6800 dati salariali dei dipendenti, e anticipazioni riguardanti serie TV e film ancora in fase di produzione\cite{SonyPic_buzzfeed}.\\
 \subsection{Impatto diretto}
+L'azienda dichiara, nel bilancio SEC per aziende estere, di aver speso \$41 milioni per spese investigative e correlate all'attacco e che dovr\`a sostenere spese legali nei confronti di dipendenti ed ex dipendenti\cite{SonyPic_20F_report}. A fine anno trover\`a un accordo per stanziare \$8 milioni di risarcimento.\\
 
 \subsection{Impatto indiretto}
+Come notiamo in figura \ref{fig:sPic1}, l'attacco ha progressivamente portato le azioni dell'intero gruppo Sony a -5\% e fino a toccare il -10\% a met\`a dicembre, sopratutto per l'importante risonanza mediatica del caso e il fatto che fosse la seconda volta in pochi anni che il nome della compagnia era accostato a casi di furto di informazioni.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/sony_2014_short.png} 
+\caption[Grafico Sony Pic short]{Impatto a breve termine Sony Picture hack}\label{fig:sPic1}
+\end{center}
+\end{figure}
 
+Sul lungo periodo l'andamento si \`e probabilmente svincolato dalla discesa iniziale, anche  grazie alla diffusa gamma di attivit\`a in di cui si occupa il gruppo \ref{fig:sPic2}. L'impatto quindi non \`e quantificabile in maniera semplice, ma \`e ragionevole pensare che il danno di immagine si sia protratto a lungo.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/sony_2014_long.png} 
+\caption[Grafico Sony PSN long]{Impatto a lungo termine Sony Picture hack}\label{fig:sPic2}
+\end{center}
+\end{figure}
 \subsection{Note}
-\section{Yahoo (2014)}
+La copertura dei media e la grande mole di notizie riguardanti il caso derivano dall'associazione dell'attacco alla Corea del Nord e ad un film in uscita, prodotto da SPE, "The Interview", in cui la storia sarebbe stata costruita attorno al tentato assassinio del leader Kim Jong Un.
+Nella gestione della crisi, l'essere protagonisti di un evento tanto discusso ha sicuramente contribuito ad aggravare i danni d'immagine connessi alla vicenda\cite{SonyPic_buzzfeed}.\\
+
+\section{Yahoo (2013, 2014)}
 \subsection{Descrizione}
-
+A settembre 2016 rende noto che nel 2014 sono stati rubati i dati personali di 500 milioni di utenti a seguito di un attacco di ingegneria sociale\cite{yahoo_book}.\\
+Il 14 dicembre 2016 Yahoo comuica che, mentre investigava al riguardo, ha scoperto un secondo furto: durante agosto 2013 \`e avvenuto quello che ricordiamo come il pi\`u grande \textit{data breach} della storia. Inizialmente venne dichiarato si tratasse di 1 miliardo, poi, nel 2017 il dato si assester\`a solidamente sui 3 miliardi di account di cui sono state diffuse informazioni\cite{yahoo_book}\cite{yahoo_guardian}.
 \subsection{Impatto diretto}
-
+L'azienda era in fase di acquisizione da parte di Verizon che, ritrattando il prezzo a ribasso, pass\`o da un'offerta di \$4,83 miliardi ad un prezo finale, nel 2017, di \$4,48 determinando una perdita efettiva di \$350 milioni\cite{yahoo_book}.\\
+Inoltre i procedimenti portarono l'azienda a pagare altri \$35 milioni per un patteggiamento con la SEC e \$117 milioni per risarcire gli utenti colpiti.\\
 \subsection{Impatto indiretto}
+Nel breve termine possiamo osservare una discesa di quasi il 10\% da settembre alla fine di dicembre 2016 prima di una crescita che anticipa l'aquisizione.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/yahoo_short.png} 
+\caption[Grafico Yahoo short]{Impatto a breve termine Yahoo data breach}\label{fig:yahoo1}
+\end{center}
+\end{figure}
 
+Nel periodo prossimo all'acquisto di Yahoo, Verizon subisce un calo del 6\%. Osservare oltre l'andamento rischia di essere fuorviante per via dei diversi componenti dell'azienda al tempo, ma le azioni seguono un trend in crescita\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/yahoo-verizon-long.png} 
+\caption[Grafico Verizon (Yahoo) long]{Impatto a lungo termine Verizon (Yahoo) data breach}\label{fig:yahoo2}
+\end{center}
+\end{figure}
 \subsection{Note}
+\begin{enumerate}
+    \item la fonte dei grafici storici di yahoo \`e \href{https://companiesmarketcap.com/yahoo/stock-price-history}{https://companiesmarketcap.com/}, in quanto non \`e stato possibile procurarsi dati pi\`u precisi di una azienda il cui ticker non esiste pi\`u;
+    \item la gestione delle comunicazioni da parte dell'azienda \`e stata tardiva a dir poco, contribuendo ad aggravare la posizione dell'azienda nei confronti dell'opinione pubblica e della legge.
+\end{enumerate}
 \section{Uber (2016, 2022)}
-\subsection{Descrizione}
+\subsection{2016}
+\subsubsection{Descrizione}
+Il \textit{data breach} avvenne ad ottobre 2016, ma la divulgazione risalea ben un anno dopo, grazie ad un cambio di dirigenza. I rischi che ha corso nel gestire ambiguamente il caso hanno rischiato di avere conseguenze penali\cite{Uber_plusEquifaxAndYahoo}.\\ 
+\subsubsection{Impatto diretto}
+L'azienda, oltre al riscatto pagato agli hacker per eliminare i dati rubati, ha concordato coi 50 stati americani il pagamento di una multa di \$148 milioni.\\
+\subsubsection{Impatto indiretto}
+Al tempo l'azienda non era quotata, quindi non \`e poissibile analizzare questo aspetto, se non osservando il caso del 2022.\\
+\subsubsection{Note}
+Una aggravante \`e stata sicuramente la gestione consapevolmente ingannevole, per esempio rivel\`o l'esistenza del \textit{breach} a SoftBank, permettendo poi che comprasse una buona parte della compagnia a prezzo ribassato\cite{Uber_plusEquifaxAndYahoo}.\\   
+\subsection{2022}
+\subsubsection{Descrizione}
+Tramite ingegneria sociale l'attaccante \`e riuscito ad entrare nel sistema di condivisione di informazioni aziendali Slack, con conseguente arresto forzato di alcuni servizi da parte dell'azienda\cite{Uber_2022}.\\
+\subsubsection{Impatto diretto}
+La prontezza della reazione ha permesso di contenere le conseguenze dirette dell'attacco, evitando eventuali sanzioni.\\ 
+\subsubsection{Impatto indiretto}
+Il mercato ha invecce reagito pi\`u bruscamente di quanto visto fin'ora \ref{fig:ubr1}, con un picco verso il basso di -10\% rispetto al giorno della scoperta (ancor pi\`u pronunciato se prendiamoin esame il 15 settembre, data della dichiarazione). Ad un mese di distanza la discesa rallenta ma non si arresta.\\
 
-\subsection{Impatto diretto}
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/uber_2022_short.png} 
+\caption[Grafico Uber 2022 short]{Impatto a breve termine Uber 2022}\label{fig:ubr1}
+\end{center}
+\end{figure}
 
-\subsection{Impatto indiretto}
+Per tornare in pari ci vogliono pi\`u di sette mesi, indice che i precedenti attacchi avevano lasciato un segno importante nella reputazione dell'azienda.\\
 
-\subsection{Note}
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/uber_2022_long.png} 
+\caption[Grafico Uber 2022 long]{Impatto a lungo termine Uber 2022}\label{fig:ubr2}
+\end{center}
+\end{figure}
+
+\subsubsection{Note}
+Il primo data breach e le sue conseguenze sono servite a Uber per cambiare approccio alla sicurezza e migliorato diversi aspetti\cite{Uber_2022}.
+
 \section{FedEx - NotPetya (2017)}
 \subsection{Descrizione}
-
+Il \textit{ransomware} NotPetya fu un attacco diffuso su larga scala, con epicentro in Ucraina, a giugno del 2017.Sua  peculiarit\`a era di non essere stato concepito per scopi di lucro, quanto pi\`u invece per causare disordine e distruzione\cite{FedEx_evolutionOfRansom}, secondo un rapporto della Casa Bianca i danni ammontarono comlessivamente a \$10 miliardi\cite{FedEx_wired}.\\
+In questo contesto, l'azienda FedEx Corporation, che aveva da poco fatto acquisizioni in Europa (TNT Express), affront\`o grossi disservizi nel vecchio continente che complicarono i processi di assimilazione\cite{FedEx_10K_report_2018}.\\
 \subsection{Impatto diretto}
-
+Nel bilancio depositato a SEC si stimano le perdite intorno ai \$400 milioni che rallentarono la crescita durante il primo quarto dell'anno fiscale (giugno-agosto 2017).\\
 \subsection{Impatto indiretto}
+Essendo l'azienda distribuita, e in forte crescita negli Stati Uniti, l'impatto distruttivo di NotPetya non \`e roboante come ci si aspetterebbe da uno dei pi\`u costosi attacchi della storia. Di fatti, dal 27 giugno 2017 (giorno dell'attacco) le azioni crescono ed iniziano una discesa solo qualche tempo dopo, scendendo fino a -5\%.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/fedex_short.png} 
+\caption[Grafico FedEx NotPetya short]{Impatto a breve termine NotPetya su FedEx}\label{fig:fdx1}
+\end{center}
+\end{figure}
+
+Come gi\`a discusso ci sono segnali di una ripresa abbastanza forte, che in mancanza dell'attacco, sarebbero potuti essere lo specchio di una crescita importante.
+
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/fedex_long.png} 
+\caption[Grafico FedEx NotPetya long]{Impatto a lungo termine NotPetya su FedEx}\label{fig:fdx2}
+\end{center}
+\end{figure}
 
 \subsection{Note}
+
+La diffusione cos\`i ampia di un attacco lo assimila, agli occhi dell'opinione pubblica, ad un disastro naturale o comunque ad un fattore esterno, intaccando pi\`u tramite costi diretti che indiretti le aziende coinvolte. I danni di immagine risultano quindi significativamente contenuti.
+
 \section{Equifax (2017)}
 \subsection{Descrizione}
-
+L'8 settembre 2017, l'agenzia di informazioni creditizie al consumo americana Equifax rilascia un comunicato in cui dichiara che ha subito un \textit{data breach} che interessa  148 milioni di cittadini statunitensi. L'attacco \`e stato possibile grazie al mancato aggiornamento tempestivo di alcuni server con una specifica vulnerabilit\`a nota, presente dell'url\cite{Equifax_case_study_2}.\\
 \subsection{Impatto diretto}
-
+Come conseguenza della grande quantit\`a di cause indette contro Equifax, l'azienda arriv\`o a concordare un impegno monetario di \$575-\$700 milioni\cite{Equifax_settlement}.\\
 \subsection{Impatto indiretto}
+L'impatto fu molto pesante, a distanza di tre giorni osserviamo un calo dell' 8,20\%, che va oltre il 20\% a met\`a settembre. Questo \`e dovuto ad una massiccia vedita delle azioni, pari a \$1,8 milioni\cite{Uber_plusEquifaxAndYahoo}\\
+
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/equifax_short.png} 
+\caption[Grafico Equifax short]{Impatto a breve termine Equifax breach}\label{fig:eqx1}
+\end{center}
+\end{figure}
+
+Sul lungo periodo l'azienda fatica a risollevarsi, complici le pesanti sanzioni e la perdita di fiducia degli investitori.\\
+
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/equifax_long.png} 
+\caption[Grafico Equifax long]{Impatto a lungo termine Equifax breach}\label{fig:eqx2}
+\end{center}
+\end{figure}
 
 \subsection{Note}
+Pare che il fatto fosse noto alla dirigenza gi\`a da inizio agosto 2017\cite{Uber_plusEquifaxAndYahoo} \`e stata, insieme al tipo di informazioni perse, una pesante aggravante in ambito legale.\\
 \section{British Airways (2018)}
 \subsection{Descrizione}
-
+Il \textit{data breach}, attuato tramite l'iniezione di 22 linee di codice Javascript malevolo via URL (\textit{cross site scripting}, XSS), che colp\`i la compagnia aerea del Regno Unito, British Airways, venne reso pubblico il 6 settembre 2018 da un comunicato pubblio del \textit{National CyberSecurity Centre}. Le vittime, le cui stime iniziali ne dichiarvano $380\,000$, si scoprono ad ottobre essere ben $565\,000$, di cui sono trapelati nomi, email e informazioni delle carte di credito.\cite{BritAir} 
 \subsection{Impatto diretto}
-
+L'azienda ha sostenuto una multa di \$20 milioni come conseguenza dell'attacco.
 \subsection{Impatto indiretto}
+La compagnia \`e nel gruppo \textit{International Airlines Group} e quotata nelle borse inglesi e spagnole, pertanto discuteremo l'andamento di quest'ultimo tramite i dati ufficiali di \href{https://www.londonstockexchange.com/stock/}{\textit{London Stock Exchange}}.\\
+Il gruppo, come evidenziato nelle fonti\cite{BritAir} ha una perdita quasi immediata del 2\%, e continua a scendere durante tutto il mese successivo.
 
-\subsection{Note}
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/britAir_short.png} 
+\caption[Grafico British Airways short]{Impatto a breve termine British Airways}\label{fig:britair1}
+\end{center}
+\end{figure}
+
+Nel lungo periodo le azioni risentono del danno di immagine fino all'inizio del 2020, in cui per\`o, la compagnia ha ricadute legate all'inizio della pandemia del Covid-19.\\
+
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/britAir_long.png} 
+\caption[Grafico British Airways long]{Impatto a lungo termine  British Airways}\label{fig:fdx2}
+\end{center}
+\end{figure}
+
 \section{Marriot International (2018)}
 \subsection{Descrizione}
-
+L'attacco si distribuisce su un ampio lasso di tempo: nel 2014, tramite accesso fisico ad un terminale con permessi di amministratore, viene installato un \textit{malware} nella rete di Starwood, agenzia alberghiera statunitense. Dopo aver trovato la chiave di decrittazione dei database e aver esfiltrato i dati, gli attaccanti cifrarono nuovamente le informazioni per non lasciare tracce. Cos\`i fu anche dopo l'acquisizione di Starwood da parte di Marriott International nel 2016, tanto da passare inosservata fino all'8 settembre 2018. Seguirono investigazioni che culminarono nella dichiarazione del 30 novembre 2018, in cui si rivelava la diffusione di informazioni di approssimativamente $500$ milioni di clienti in tutto il mondo\cite{Marriott_ResGate}\cite{Marriott_customer_perception}.\\ 
 \subsection{Impatto diretto}
-
+Come spese di riparazione interne Marriott dichiara \$30 milioni \cite{Marriott_ResGate}, in aggiunta pag\`o anche una multa di \textsterling18,4 milioni al Regno Unito \cite{Marriott_actual_fine}, sebbene  inizialmente le cifre dichiarate fossero intorno ai \textsterling99 milioni.\\ 
 \subsection{Impatto indiretto}
 
 \subsection{Note}
@@ -391,15 +528,16 @@ Le comunicazioni furono tardive e poco precise, gli azionisti ebbero notizia del
 \subsection{Note}
 \section{SolarWinds (2020)}
 \subsection{Descrizione}
-
+\\
 \subsection{Impatto diretto}
-
+filler\\
 \subsection{Impatto indiretto}
-
+\\
 \subsection{Note}
+\\
 \section{Colonial Pipeline (2021)}
 \subsection{Descrizione}
-
+filler\\
 \subsection{Impatto diretto}
 
 \subsection{Impatto indiretto}
