@@ -583,20 +583,56 @@ Nonostante l'azienda non ha subito riduzioni di prezzo delle azioni, non essendo
 
 \section{MGM Resorts (2023)}
 \subsection{Descrizione}
-
+Dal 10 settembre 2023 iniziano a trapelare indiscrezioni rigiuardo a comunicazioni tra l'FBI, il \textit{Nevada Gaming Control Board} e l'azienda multinazionale di intrattenimento, gioco d'azzardo e ospitalit\`a MGM Resorts, a seguito di cui, l'11 settembre, verr\`a rilasciato un comunicato in cui si annuncia l'arresto di alcuni servizi e l'inizio di indagini in merito ad un attacco informatico.\\
+La natura del \textit{ransomware attack} diviene presto nota grazie alla rivendicazione da parte del gruppo di hacker ALPHV/BlackCat, che si \`e intrusa nel sistema tramite ingegneria sociale via telefonica (\textit{vishing}).\\
+Nonostante la risposta pronta e la collaborazione stretta con le autorit\`a, sono state rubate informazioni riguardanti clienti e dipendenti, compromettendo la posizione di MGM Resorts International di fronte alla legge in materia di protezione dei dati personali \cite{MGMResorts_cybnews}.\\
 \subsection{Impatto diretto}
-
+MGM Resorts dichiara meno di \$10 milioni in spese di consulenza legale, coperti in larga parte da assicurazione \cite{MGM_8k_2023}. Ha in corso alcuni procedimenti , e ha patteggiato per un fondo di risarcimento per il caso del 2023 e uno precedente, del 2019, di \$45 milioni \cite{mgm_settlement}.  
 \subsection{Impatto indiretto}
+Nel rapporto straordinario a SEC si stima una perdita di  \$100 milioni nell'Adjusted Property EBITDAR (indicatore del fatturato ante tasse, interessi,  ammortamenti, deprezzamenti e spese di affitto aggiustato per escludere spese straordinarie).\\
+Come si nota in figura \ref{fig:mgm1}, rispetto alle performances pre annuncio del \textit{data breach} e l'arresto dei servizi, viene registrato un calo superiore al 5\%, che tocca un picco di -20\% a inizio ottobre.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/MGM_short.png} 
+\caption[Grafico MGM Resorts short]{Impatto a breve termine MGM Resorts}\label{fig:mgm1}
+\end{center}
+\end{figure}
 
+Come da rapporto, era prevista una ripresa grazie ad un evento di Formula 1 \cite{MGM_8k_2023}, ma il calo successivo pu\`o essere connesso al danno di immagine subito.\\
+
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/MGM_long.png} 
+\caption[Grafico MGM Resorts long]{Impatto a lungo termine  MGM Resorts}\label{fig:mgm2}
+\end{center}
+\end{figure}
 \subsection{Note}
+L'attacco \`e ben documentato anche grazie ad un rapporto pubblicato dagli attaccanti stessi che, per alcuni, pare vogliano cos\`i presentarsi come una controparte ragionevole nelle trattative che si sviluppano attorno ai loro attacchi \textit{ransomware}.\\
 \section{Change Healthcare (2024)}
 \subsection{Descrizione}
-
+Change Healthcare Inc. \`e un gestore di pagamenti nel circuito sanitario statunitense parte della holding United Healthcare Group. Il 21 febbraio 2024 denuncia l'ingresso non autorizzato nei suoi sistemi da parte del, gi\`a menzionato, gruppo di hacker \textit{ransomware}  BlackCat. Per limitare i danni ha istantaneamente disattivato tutti i servizi, creando uno scompenso nel sistema sanitario nazionale. Nonostante tutto \`e stato stimato che siano trapelate le informazioni di 192,7 milioni di persone \cite{ChHealth_hipaa} \cite{ChHealth_lessons}.\\
 \subsection{Impatto diretto}
-
+Nel tentativo di recuperare i dati rubati, Change Healthcare, ha pagato \$22 milioni,a questo punto per\`o, il gruppo BlackCat si ritir\`o dalle trattative con il riscatto, e l'intermediario che le aveva gestite, ancora in possesso dei dati, ne chiese un secondo, che non fu corrisposto \cite{ChHealth_hipaa}. 
+A questo si aggiungeranno le spese legali dei processi in corso. \\
+Come impatti diretti, in un report sul terzo quarto dell'anno fiscale 2024, viene stimato a \$1,521 miliardi il costo diretto per United Health.\\
 \subsection{Impatto indiretto}
+Essenndo UH un gruppo ampio, e che le ripercussioni dell'attacco sono arrivate prima ad aziende pi\`u piccole, con limitata capacit\`a di gestire la crisi, \`e plausibile che il grafico non riporti una discesa istantanea, ma un picco verso il basso che parte quasi una settimana dopo l'annuncio del \textit{breach}.\\
+La perdita nel breve termine si assesta comunque tra il 10\% e il 5\%.\\
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/chHealth_short.png} 
+\caption[Grafico Change Healthcare short]{Impatto a breve termine Change Healthcare}\label{fig:chh1}
+\end{center}
+\end{figure}
 
-\subsection{Note}
+Dopo luglio 2024 l'azienda ha iniziato il recupero, ma ad oggi pare in una crisi ancora peggiore di cui le sanzioni in arrivo, le perdite, gli ingenti prestiti fatti (\$9,7 miliardi \cite{ChHealth_lessons}) e il danno di immagine non sono protagonisti, ma hanno sicuramente un ruolo.\\
+
+\begin{figure}[H] 
+\begin{center} 
+\includegraphics[width=10cm]{figures/chHealth_long.png} 
+\caption[Grafico Change Healthcare long]{Impatto a lungo termine  Change Healthcare}\label{fig:chh2}
+\end{center}
+\end{figure}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -606,8 +642,48 @@ Nonostante l'azienda non ha subito riduzioni di prezzo delle azioni, non essendo
 % Analisi dettagliata del precedente capitolo 
 \chapter{Analisi dettagliata del precedente capitolo}
 Questo sar\`a il capitolo pi\`u importante dove individua trend sugli attacchi e sulle conseguenze.\\
-\\href{https://www.overleaf.com/learn/latex/Code\_listing}{listing}.
 
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nome soggetto colpito} & \textbf{Anno} & \textbf{Tipo di attacco} & \textbf{Costo diretto} & \textbf{Costo indiretto}\\
+        \hline
+        Sony Playstation Network  & 2011 &  &  &  \\
+        \hline
+         Target & 2013 &  &  & \\
+         \hline
+        Sony Pictures & 2014 &  &  & \\
+         \hline
+        Yahoo & 2014 &  &  & \\
+         \hline
+         Uber & 2016 &  &  & \\
+         \hline
+         Uber & 2022 &  &  & \\
+         \hline
+         FedEx & 2017 &  &  & \\
+         \hline
+         Equifax & 2017 &  &  & \\
+         \hline
+         British Airways & 2018 &  &  & \\
+         \hline
+         Marriott International & 2018 &  &  & \\
+         \hline
+         Capital One & 2019 &  &  & \\
+         \hline
+         SolarWinds & 2020 &  &  & \\
+         \hline
+        Colonial Pipeline & 2021 &  &  & \\
+         \hline
+         MGM Resorts & 2023 &  &  & \\
+         \hline
+         Change Healthcare & 2024 &  &  & \\
+         \hline
+    \end{tabular}
+    \caption{Tabella analisi}
+    \label{tab:placeholder}
+\end{table}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
