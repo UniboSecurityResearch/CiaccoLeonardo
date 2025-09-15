@@ -7,7 +7,7 @@
 \documentclass[12pt,a4paper,openright,twoside]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
 \usepackage{fancyhdr}
 \usepackage{indentfirst}
 \usepackage{graphicx}
@@ -35,6 +35,7 @@
 
 %comandi per l'impostazione della pagina, vedi il manuale della libreria fancyhdr per ulteriori delucidazioni
 \pagestyle{fancy}\addtolength{\headwidth}{20pt}
+\setlength{\headheight}{14.49998pt}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection \ #1}{}}
 \rhead[\fancyplain{}{\bfseries\leftmark}]{\fancyplain{}{\bfseries\thepage}}
@@ -185,8 +186,7 @@ $(3,1)$ & $(3,2)$ & $(3,3)$\\
 
 
 \section{Altra Sezione}\label{sec:prova}%posso mettere le label anche alle section
-In questa sezione voglio fare un riferimento alla bibliografia: questo \`e il mio riferimento 
-prova cit \cite{enisa_threat_landscape}
+
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -689,13 +689,15 @@ Possiamo notare come le premesse siano state rispettate (-5\% in azioni \cite{ac
     \item la maggior parte degli ebitda che non sono esplicitati nei report in quanto non \`e obbligatorio a fini fiscali, sono spesso ottenuti tramite  la formula $EBITDA = Operating Income + Depreciacion\&Amortisation$
     \item Sony nel 2012 ha un, con cambio valuta del periodo, registra un EBITDA di \$1,154 miliardi
     \item l'EBITDA di Sony nel 2014vale \$4,032 miliardi
+    \item nel caso del data breach di Yahoo non viene considerato il deprezzamento di 350 milioni nei costi
+    \item 
 \end{itemize}
 
 
 
 
 
-in yahoo non conto il deprezzamento di 350 milioni come costo\\
+
 
 multe in sterline a marriott convertite con tasso di cambio di 0,8 del 2018\\
 
@@ -743,8 +745,7 @@ Quanto detto prima non si applica al percepito e alla reazione dei mercati finan
 % CONCLUSIONI
 \chapter{Conclusioni}
 
-Da scrivere alla fine, un breve riassunto di cosa si \`e affrontato, i risultati (se quanto indicato nell'introduzione come obiettivo \`e stato raggiunto) e come \`e possibile continuare la tesi (p.e. se qualcosa non \`e stato affrontato per motivi di tempo o limitazioni hardware).
-
+Lo studio evidenzia controtendenza ....
 
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
@@ -753,10 +754,11 @@ Da scrivere alla fine, un breve riassunto di cosa si \`e affrontato, i risultati
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAFIA
+\rhead[\fancyplain{}{\bfseries Bibliografia}]
+{\fancyplain{}{\bfseries\thepage}}
 \addcontentsline{toc}{chapter}{Bibliografia}
 \label{Bibliography}
 \bibliographystyle{IEEEtran}
 \bibliography{src/bibliography}
-\rhead[\fancyplain{}{\bfseries Bibliografia}]
-{\fancyplain{}{\bfseries\thepage}}
+
 \end{document}
