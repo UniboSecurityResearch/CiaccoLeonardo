@@ -7,7 +7,6 @@
 \documentclass[12pt,a4paper,openright,twoside]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-%\usepackage[latin1]{inputenc}
 \usepackage{fancyhdr}
 \usepackage{indentfirst}
 \usepackage{graphicx}
@@ -56,14 +55,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ABSTRACT 
-\clearpage{\pagestyle{empty}\cleardoublepage}
-\pagenumbering{roman}
-\renewcommand{\abstractname}{Abstract}
-\phantomsection
-\addcontentsline{toc}{chapter}{Abstract}
-\begin{abstract}
-    Questo \`e l'abstract: un riassunto dell'introduzione di massimo 300 parole. Da scrivere alla fine.
-\end{abstract}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%\pagenumbering{roman}
+%\renewcommand{\abstractname}{Abstract}
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Abstract}
+%\begin{abstract}
+%    Questo \`e l'abstract: un riassunto dell'introduzione di massimo 300 parole. Da scrivere alla fine.
+%\end{abstract}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,8 +71,7 @@
 \chapter*{Ringraziamenti}
 \phantomsection
 \addcontentsline{toc}{chapter}{Ringraziamenti}
-Qui possiamo ringraziare il mondo intero!!!!!!!!!!\\
-Ovviamente solo se uno vuole, non \`e obbligatorio.
+Grazie
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -115,78 +113,7 @@ Indice}}
 \chapter{Introduzione} 
 \lhead[\fancyplain{}{\bfseries\thepage}]{\fancyplain{}{\bfseries\rightmark}}
 \pagenumbering{arabic} %mette i numeri arabi
-Questa \`e l'introduzione: da scrivere alla fine, un breve riassunto su cosa si andr\`a ad affrontare nella tesi.
-Le linee guida per la stesura della Tesi di Laurea sono al seguente link \href{https://ulis.se/thesis/}{https://ulis.se/thesis/}.
-
-\section{Prima Sezione} %crea la sezione
-Questa \`e la prima sezione.
-
-
-Ora vediamo un elenco numerato: %crea un elenco numerato
-\begin{enumerate}
-\item primo oggetto
-\item secondo oggetto
-\item terzo oggetto
-\item quarto oggetto
-\end{enumerate}
-
-\begin{figure}[h] %crea l'ambiente figura; [h] sta per here, cioè la figura va qui
-\begin{center} %centra nel mezzo della pagina la figura \includegraphics[width=5cm]{figura.eps} inserisce una figura larga 5cm se si vuole usare va scommentata
-
-%inserisce la legenda ed etichetta la figura con \label{fig:prima}
-\caption[legenda elenco figure]{legenda sotto la figura}\label{fig:prima}
-\end{center}
-\end{figure}
-
-
-\section{Seconda Sezione}
-Ora vediamo un elenco puntato:
-\begin{itemize} %crea un elenco puntato
-\item primo oggetto
-\item secondo oggetto
-\end{itemize}
-
-
-\section{Altra Sezione}
-Vediamo un elenco descrittivo:
-
-\begin{description} %crea un elenco descrittivo
-  \item[OGGETTO1] prima descrizione;
-  \item[OGGETTO2] seconda descrizione;
-  \item[OGGETTO3] terza descrizione.
-\end{description}
-
-
-\subsection{Altra SottoSezione}
-%crea una sottosottosezione
-
-\subsubsection{SottoSottoSezione}Questa sottosottosezione non viene
-numerata, ma \`e solo scritta in grassetto.
-
-
-\section{Altra Sezione} %crea una sottosezione
-Vediamo la creazione di una tabella; la tabella \ref{tab:uno}
-(richiamo il nome della tabella utilizzando la label che ho messo sotto):
-la facciamo di tre righe e tre colonne, la prima colonna
-``incolonnata'' a destra (r) e le altre centrate (c):\\
-\begin{table}[h] %ambiente tabella (serve per avere la legenda)
-\begin{center} %centra nella pagina la tabella
-\begin{tabular}{r|c|c} %tre colonne con righe verticali prodotte con |
-\hline \hline                           %inserisce due righe orizzontali
-$(1,1)$ & $(1,2)$ & $(1,3)$\\ %& separa le colonne e con
-\hline                                  %inserisce una riga orizzontale
-$(2,1)$ & $(2,2)$ & $(2,3)$\\ %  \\ va a capo
-\hline                                  %inserisce una riga orizzontale
-$(3,1)$ & $(3,2)$ & $(3,3)$\\
-\hline \hline                           %inserisce due righe orizzontali
-\end{tabular}
-\caption[legenda elenco tabelle]{legenda tabella}\label{tab:uno}
-\end{center}
-\end{table}
-
-
-\section{Altra Sezione}\label{sec:prova}%posso mettere le label anche alle section
-
+Introduzione
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -264,7 +191,7 @@ Inoltre, i danni connessi agli attacchi sono ugualmente preoccupanti, tra questi
   \item ripercussioni legali;
   \item perdita di fiducia di clienti ed investitori.
 \end{itemize}
-Un attacco pu\\`o avere diversi scopi, di cui, primo tra tutti, quello economico, ma il panorama degli attacchi \`e vasto, e pensare di non poter essere bersagli appetibili \`e un errore pericoloso per l'azienda e chiunque vi sia collegato. \cite{enisa_threat_landscape}\\
+Un attacco pu\`o avere diversi scopi, di cui, primo tra tutti, quello economico, ma il panorama degli attacchi \`e vasto, e pensare di non poter essere bersagli appetibili \`e un errore pericoloso per l'azienda e chiunque vi sia collegato. \cite{enisa_threat_landscape}\\
 A fronte di ci\`o risulta gi\`a evidente quanto sia necessario essere a conoscenza dell'entit\`a del rischio di un attacco informatico che, vista anche la forte crescita e diffusione, non pu\`o essere ignorata. Va quindi sviluppato un piano d'azione dettagliato e coerente con la valutazione dei beni a rischio, finanziato adeguatamente.\\
 
 \section{Metodologia}
@@ -347,7 +274,7 @@ Sul lungo periodo l'andamento si \`e probabilmente svincolato dalla discesa iniz
 \begin{figure}[H] 
 \begin{center} 
 \includegraphics[width=10cm]{figures/sony_2014_long.png} 
-\caption[Grafico Sony PSN long]{Impatto a lungo termine Sony Picture hack}\label{fig:sPic2}
+\caption[Grafico Sony Pic long]{Impatto a lungo termine Sony Picture hack}\label{fig:sPic2}
 \end{center}
 \end{figure}
 \subsection{Note}
@@ -666,7 +593,7 @@ Raccolgo in una tabella le analisi che si possono fare riguardo ai casi presenta
          \hline
          British Airways & 2018 & data breach via XSS & 26  (0,48\% \cite{iag_2019_report}) & -2\% \\
          \hline
-         Marriott International & 2018 & data breach via phisical malware injection & 53  (2\% \cite{marriott_2018_10k}) & -5\% -- -17\% \\
+         Marriott International & 2018 & data breach via phisical malware injection & 53,92  (2,05\% \cite{marriott_2018_10k}) & -5\% -- -17\% \\
          \hline
          Capital One & 2019 & data breach & 270  (1,75\% \cite{capital_one_2019_10k}) & -5,89\% -- -12\% \\
          \hline
@@ -683,32 +610,29 @@ Raccolgo in una tabella le analisi che si possono fare riguardo ai casi presenta
     \label{tab:analisys}
 \end{table}
 
-Possiamo notare come le premesse siano state rispettate (-5\% in azioni \cite{accenture2010}),
-\subsection{Note} 
+\section{Note} 
 \begin{itemize}
     \item la maggior parte degli ebitda che non sono esplicitati nei report in quanto non \`e obbligatorio a fini fiscali, sono spesso ottenuti tramite  la formula $EBITDA = Operating Income + Depreciacion\&Amortisation$
     \item Sony nel 2012 ha un, con cambio valuta del periodo, registra un EBITDA di \$1,154 miliardi
     \item l'EBITDA di Sony nel 2014vale \$4,032 miliardi
     \item nel caso del data breach di Yahoo non viene considerato il deprezzamento di 350 milioni nei costi
-    \item 
+    \item le multe in sterline applicate a  Marriott  International e
+     British Airways dal Regno Unito sono convertite con un 
+     tasso di cambio di 1,3 (\textsterling\ to \$) del 2018
+    \item per capital one, ho ricavato e utilizzato il valore di 
+    EBITDA per coerenza con il resto dello studio pur non essendo il
+    un indicatore spesso usato per  banche. Nello specifico ho
+    aggiunto al \textit{net income} le tasse, il costo degli interessi, deprezzamento e ammortamento
+    \item il costo del processo a MGM Resorts \`e dimezzato per tenere
+    in considerazione il fatto che la multa sia legata anche ad un altro caso
+    \item dal rapporto di United Health, per evincere l'EBITDA si \`e 
+    utilizzata la formula $ EBITDA = Earnings + Amortisation $
 \end{itemize}
 
+Possiamo notare come le premesse iniziali riguardanti un calo dele azioni del 5\% siano state rispettate in larga parte \cite{accenture2010}.\\
 
-
-
-
-
-
-multe in sterline a marriott convertite con tasso di cambio di 0,8 del 2018\\
-
-per capital one, ho calcolato ebitda per coerenza con il resto dello studio pur non essendo il top per una banca, aggiungendo al net income le tasse, il costo degli interessi, e deprezzamento e ammortamento\\
-
-ho diviso per due il costo del processo a mgm essendo legato anche ad un altro caso\\
-
-per change healtcare ebitda \`e earnings + ammortamenti\\
-
-\subsection{Dati linearizzati}
-\subsubsection{EBITDA}
+\section{Dati linearizzati}
+\subsection{EBITDA}
 Come si pu\`o notare da figura \ref{fig:ebit1} e figura \ref{fig:ebit2} si evidenzia un trend in calo. La prima \`e sicuramente condizionata dal fatto che alcuni dei processi di MGM Resorts e Change Healthcare sono ancora in corso, e sono quindi incompleti. Ci\`o viene corretto nel secondo grafico, ottenendo una linearizzazione che denuncia un calo meno pronunciato.\\
 \begin{figure}[H]
     \centering
@@ -728,7 +652,7 @@ Come si pu\`o notare da figura \ref{fig:ebit1} e figura \ref{fig:ebit2} si evide
 Il trend discendente evidenzia un calo dei costi diretti in relazione alla redditivit\`a dell'azienda, che potrebbe derivare da una maggiore prontezza ed efficienza nella gestione sul piano tecnico da parte delle aziende di media-grande dimensione prese in esame nello studio.\\
 
 
-\subsubsection{Azioni}
+\subsection{Azioni}
 Quanto detto prima non si applica al percepito e alla reazione dei mercati finanziari secondo figura \ref{fig:stockloss}. Il trend crescente funge da monito e restituisce un quadro in cui la prevenzione rimane centrale nonostante il calo di costi diretti connessi agli attacchi.\\
 \begin{figure}[H]
     \centering
@@ -745,7 +669,24 @@ Quanto detto prima non si applica al percepito e alla reazione dei mercati finan
 % CONCLUSIONI
 \chapter{Conclusioni}
 
-Lo studio evidenzia controtendenza ....
+Lo studio evidenzia una controtendenza rispetto all'effettiva crescita del 
+costo degli attacchi informatici menzionata precedentemente e una crescente 
+propensione a crolli considerevoli nel valore di mercato e l'incremento
+nel tempo del numero di attacchi \textit{ransomware}, sebbene una valutazione
+su un campione cos\`i ridotto sia esposta ad errori.\\
+\`E possibile interpretare questo dato come una minore propensione o 
+minore efficacia degli hacker negli attacchi a grandi aziende che si
+dimostrano sempre pi\`u preparate. Ma se comunque il costo complessivo 
+\`e in fortissima crescita \cite{cybercrime_magazine} il risultato \`e 
+un danno maggiore per enti collegati o un aumento del numero assoluto di
+attacchi ad aziende pi\`u piccole che spesso non si interessano sufficientemente
+ o non hanno i mezzi adeguati.\\
+A fronte di ci\`o risulta evidentemente necessario potenziare per qualunque
+azienda la propria copertura in ambito di sicurezza informatica. In italia,
+dove la maggioranza delle aziende sono piccole o medie imprese, sarebbero
+probabilmente efficaci degli incentivi statali che, aiutando lo sviluppo
+di un livello adeguato di protezione in maniera capillare, permetterebbe
+di ridurre considerevolmente anche i danni agli enti connessi.
 
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
