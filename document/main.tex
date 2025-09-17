@@ -113,7 +113,14 @@ Indice}}
 \chapter{Introduzione} 
 \lhead[\fancyplain{}{\bfseries\thepage}]{\fancyplain{}{\bfseries\rightmark}}
 \pagenumbering{arabic} %mette i numeri arabi
-Introduzione
+Il pericolo degli attacchi informatici \`e tristemente noto, ci\`o che viene spesso trascurato \`e l'impatto concreto e 
+misurabile sui piani econimico e finanziario. Oltre le spese di ripristino concorrono al danno concreto anche perdita di 
+fiducia, valore di mercato e stabilit\`a dell'organizzazione.\\
+
+Tramite l'analisi di 15 casi di studio, questo elaborato si propone di fornire un dato reale che aiuti a diffondere una 
+maggiore consapevolezza in materia. Nel capitolo \ref{chap:artState} vi \`e una analisi dello Stato dell'Arte per 
+comprendere il panorama degli attacchi informatici. A seguire verranno sviscerati i singoli casi nel capitolo 
+\ref{chap:attacks}, per poi metterli a confronto e interpretare i dati ottenuti nel capitolo \ref{chap:analisys}.\\
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -121,7 +128,7 @@ Introduzione
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STATO DELL'ARTE
-\chapter{Analisi dello stato dell'arte e del contesto}
+\chapter{Analisi dello stato dell'arte e del contesto}\label{chap:artState}
 Il presente capitolo mira a fornire le informazioni fondamentali, necessarie a comprendere i futuri sviluppi. A questo scopo sono definiti alcuni concetti chiave in ambito di sicurezza informatica:
 \begin{itemize}
     \item rischio
@@ -132,25 +139,26 @@ Il presente capitolo mira a fornire le informazioni fondamentali, necessarie a c
 \end{itemize}
 Con \textbf{rischio} si intende la possibilit\`a che azioni umane o eventi  abbiano un impatto su ci\`o a cui \`e attribuito valore. \`E quindi corretto affermare che si tratta di una grandezza, e come tale \`e quantificabile, \`e infatti direttamente proporzionale alla probabilit\`a di avvenimento e all'impatto che avrebbe sui beni colpiti. La valutazione del rischio, mirata alla sua gestione e controllo, parte dalla stima quanto pi\`u accurata di queste due variabili.\\
 \\
-La \textbf{sicurezza} \`e il processo di contenimento del rischio che consiste essenzialmente nella cura di tre propriet\`a fondamentali: riservatezza (inaccessibilit\`a delle informazioni a chi non ha il permesso di consultarle), integrit\`a (garanzia di correttezza delle informazioni) e disponibilit\`a(possibilit\`a di accesso e utilizzo delle informazioni e i servizi offerti).\\
+La \textbf{sicurezza} \`e il processo di contenimento del rischio che consiste essenzialmente nella cura di tre propriet\`a fondamentali: riservatezza (inaccessibilit\`a delle informazioni a chi non ha il permesso di consultarle), integrit\`a (garanzia di correttezza delle informazioni) e disponibilit\`a (possibilit\`a di accesso e utilizzo delle informazioni e i servizi offerti).\\
 \\
 La \textbf{minaccia} consiste nella potenziale compromissione di una o pi\`u delle propriet\`a sopracitate, e, da concetto astratto, si concretizza in un \textbf{attacco}: azione di sfruttamento (\textit{exploit}) delle vulnerabilit\`a di un sistema\\
 
 \section{Tipologie di attacco}
-ENISA (Agenzia dell'Unione europea per la cybersicurezza) raggruppa gli attacchi informatici in otto categorie principali.\cite{enisa_threat_landscape}
+ENISA (Agenzia dell'Unione Europea per la Cybersicurezza) raggruppa gli attacchi informatici in otto categorie principali.\cite{enisa_threat_landscape}
 \subsection{Ransomware}
-Definito come un tipo d attacco in cui gli attori coinvolti prendono il controllo di un bene del bersaglio e chiedono un riscatto (in inglese \textit{ransom}) in cambio della restituzione. \`E un tipo di attacco fatto generalmente per scopi economici, ma, essendo anche uno dei pi\`u diffusi evolve rapidamente, sia dal punto di vista delle tecniche di estorsione che degli obiettivi.\\
+Definito come un tipo d attacco in cui gli attori coinvolti prendono il controllo di un bene del bersaglio e chiedono un riscatto (in inglese \textit{ransom}) in cambio della restituzione. \`E un tipo di attacco  generalmente attuato per scopi economici, ma, essendo anche uno dei pi\`u diffusi evolve rapidamente, sia dal punto di vista delle tecniche di estorsione che degli obiettivi.\\
 
 \subsection{Malware}
-Si tratta di un termine ombrello, descrive tutti i software o firmware con lo scopo di eseguire un processo non autorizzato sulla macchina ospitante il cui risultato \`e la compromissione di una delle tre propiet\`a della sicurezza.\\
+Si tratta di un termine ombrello: descrive tutti i \textit{software} o \textit{firmware} con lo scopo di eseguire un processo non autorizzato sulla macchina ospitante il cui risultato \`e la compromissione di una delle tre propiet\`a della sicurezza.\\
+
 \subsection{Ingegneria sociale}
 Gli attacchi tramite ingegneria sociale si distinguono per lo sfruttamento della vulnerabilit\`a derivata dall'errore umano. Consistono nel mettere in atto tecniche di manipolazione per indurre chi coinvolto nella gestione dei beni bersaglio a rilasciare informazioni sensibili, concedere permessi 
-apparentemente innocui, visitare siti, aprire file, documenti o e-mails con contenuto malevolo. Un esempio pu\`o essere il \textit{phishing}, attacco in cui si cerca di indurre la vittima ad aprire un link ad un sito che scarica un \textit{malware}.\\
+apparentemente innocui, visitare siti, aprire file, documenti o e-mail con contenuto malevolo. Un esempio pu\`o essere il \textit{phishing}, in cui si cerca di indurre la vittima ad aprire un link ad un sito che scarica un \textit{malware}.\\
 L'ingegneria sociale \`e spesso protagonista delle fasi iniziali di un attacco, ma questo non esclude che possa essere impiegata in stadi pi\`u avanzati. Ad esempio, \`e chiamata BEC (\textit{Business E-mail Compromise}) l'intrusione tramite vecchie credenziali aziendali che le sfrutta, fingendosi parte dell'organizzazione, per ottenere dagli ex colleghi informazioni, denaro, o risorse altrimenti inaccessibili.\cite{IBM_BEC}\\
 
 \subsection{Violazioni di dati}
 Tecnicamente vi ci si riferisce con i termini inglesi \textit{data breach} o \textit{data leak}.  
-Da definizione del GDPR, per violazione dei dati personali intendiamo la "violazione di sicurezza che comporta accidentalmente o in modo illecito la distruzione, la perdita, la modifica, la divulgazione non autorizzata o l'accesso ai dati personali trasmessi, conservati o comunque trattati" (articolo 4.12 GDPR). \\
+Da definizione del GDPR, per violazione dei dati personali intendiamo la ``violazione di sicurezza che comporta accidentalmente o in modo illecito la distruzione, la perdita, la modifica, la divulgazione non autorizzata o l'accesso ai dati personali trasmessi, conservati o comunque trattati'' (articolo 4.12 GDPR). \\
 La differenza risiede nell'intenzionalità: il \textit{breach} \`e un attacco con l'esplicito obiettivo di ottenere o diffondere dati sensibili o protetti, il \textit{leak} è originato da un errore che porta ad una indesiderata perdita o messa a disposizione di dati sensibili. \\
 
 \subsection{Minacce alla disponibilit\`a: DoS}
@@ -183,6 +191,7 @@ In un panorama di questo tipo le aziende quotate in borsa, soprattutto le pi\`u 
   \item se attaccate, hanno \textbf{reazioni} spesso \textbf{prevedibili}: secondo un rapporto di Accenture del 2010 \cite{accenture2010}, le aziende che subiscono un attacco sperimentano un calo di prezzo delle azioni che si aggira solitamente intorno al 5\%, rivelando come l'attacco potrebbe essere sfruttato ulteriormente come strumento di controllo illecito del mercato per trarre  ulteriori profitti collaterali.
 \end{itemize}
 Solo nel 2023, il 21\% selle aziende in S\&P500 hanno subito un \textit{breach}\cite{SecurityScorecard_SP500}.\\
+\\
 Inoltre, i danni connessi agli attacchi sono ugualmente preoccupanti, tra questi:
 \begin{itemize}
   \setlength{\itemsep}{0pt}   
@@ -203,7 +212,7 @@ Gli attacchi sono di vario tipo, e sono avvenuti tra il 2011 e il 2024 l'analisi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Attacchi e conseguenze finanziarie
-\chapter{Attacchi e conseguenze finanziarie}
+\chapter{Attacchi e conseguenze finanziarie}\label{chap:attacks}
 Nota: la maggior parte dei grafici proviene da \href{https://www.macrotrends.net/}{macrotrends}.
 
 \section{Sony Playstation Network (2011)}
@@ -212,7 +221,7 @@ Il 20 aprile 2011 Sony dichiar\`o che tra il 17 e il 19 dello stesso mese avvenn
 \subsection{Impatto diretto}
 Sony sub\`i diverse conseguenze legali, che unite agli obblighi di miglioramento della sicurezza, si stima ebbero un costo complessivo di \$171 milioni.\\
 \subsection{Impatto indiretto}
-Come si pu\`ovedere dalla figura \ref{fig:pnt1} e nelle fonti \cite{Sony_pnt} la compagnia sub\`i, nei primi giorni, un calo del valore delle azioni ben superiore al 3\%.\\
+Come si pu\`ovedere dalla figura \ref{fig:pnt1} e nelle fonti \cite{Sony_pnt} la compagnia sub\`i, nei primi giorni, un calo del valore delle azioni  superiore al 3\%.\\
 
 \begin{figure}[H] 
 \begin{center} 
@@ -235,12 +244,12 @@ A seguito inizia un periodo di contrazione che, possiamo osservare, porta i valo
 Le comunicazioni furono tardive e poco precise, gli azionisti ebbero notizia del motivo per cui Playstation Network era disabilitato solo 7 giorni dopo, e i comunicati ai clienti non furono da meno, alimentando malcontento e sfiducia nelle capacit\`a dell'azienda\cite{Sony_pnt}.
 \section{Target (2013)}
 \subsection{Descrizione}
-Il caso di \textit{data breach} affrontato riguarda l'azienda di distribuzione Target, seconda, negli Stati Uniti, solamente a Walmart, e l'attacco che si \`e concluso con il furto di  informazioni, comprese informazioni di pagamento e carte di credito, di 70 milioni di clienti.\\
-Prime avvisaglie dell'ingresso di un malware nella rete arrivano il 30 novembre 2013, probabilmente avvenuto per via dell'utilizzo di passwords troppo semplici nei server aziendali, ma \`e dal 12 dicembre che, in seguito alla notifica del Dipartimento di Giustizia, iniziano le indagini congiunte. Verificatane l'entit\`a, la notizia viene resa di dominio pubblico il 19 dicembre 2013\cite{Target}.\\
+Il caso di \textit{data breach} affrontato riguarda l'azienda di distribuzione Target, seconda negli Stati Uniti solamente a Walmart, e l'attacco che si \`e concluso con il furto di  informazioni, comprese informazioni di pagamento e carte di credito, di 70 milioni di clienti.\\
+Prime avvisaglie dell'ingresso di un malware nella rete arrivano il 30 novembre 2013, probabilmente avvenuto per via dell'utilizzo di password troppo semplici nei server aziendali, ma \`e dal 12 dicembre che, in seguito alla notifica del Dipartimento di Giustizia, iniziano le indagini congiunte. Verificatane l'entit\`a, la notizia viene resa di dominio pubblico il 19 dicembre 2013\cite{Target}.\\
 \subsection{Impatto diretto}
 Da quanto dichiarato nei bilanci SEC (\textit{Securities and Exchange Commission}), le spese dirette, tolti \$90 milioni coperti da assicurazione, ammontano a \$200 milioni\cite{Target}.
 \subsection{Impatto indiretto}
-Sebbene nei giorni immediatamente successivi ci sia stato un picco verso il basso di -2.2\% \ref{fig:tgt1}, con momenti di ulteriore discesa, e sebbene la crescita sia stata praticamente neutra per un anno, dalla fine del 2014 l'azienda ha recuperato parte della crescita inespressa fino ad allora \ref{fig:tgt2}. Ad aiutare \`e stata l'ottima immagine che ha nei confronti dei clienti e la fiducia dei pi\`u affezionati ad un marchio decisamente forte.\\
+Sebbene nei giorni immediatamente successivi ci sia stato un picco verso il basso di -2.2\% \ref{fig:tgt1}, con momenti di ulteriore discesa, e sebbene l'andamento sia stato praticamente neutro per un anno, dalla fine del 2014 l'azienda ha recuperato parte della crescita inespressa fino ad allora \ref{fig:tgt2}. Ad aiutare \`e stata l'ottima immagine che ha nei confronti dei clienti e la fiducia dei pi\`u affezionati ad un marchio decisamente forte.\\
 \begin{figure}[H] 
 \begin{center} 
 \includegraphics[width=10cm]{figures/target_short.png} 
@@ -278,7 +287,7 @@ Sul lungo periodo l'andamento si \`e probabilmente svincolato dalla discesa iniz
 \end{center}
 \end{figure}
 \subsection{Note}
-La copertura dei media e la grande mole di notizie riguardanti il caso derivano dall'associazione dell'attacco alla Corea del Nord e ad un film in uscita, prodotto da SPE, "The Interview", in cui la storia sarebbe stata costruita attorno al tentato assassinio del leader Kim Jong Un.
+La copertura dei media e la grande mole di notizie riguardanti il caso derivano dall'associazione dell'attacco alla Corea del Nord e ad un film in uscita, prodotto da SPE, ``The Interview'', in cui la storia sarebbe stata costruita attorno al tentato assassinio del leader Kim Jong Un.
 Nella gestione della crisi, l'essere protagonisti di un evento tanto discusso ha sicuramente contribuito ad aggravare i danni d'immagine connessi alla vicenda\cite{SonyPic_buzzfeed}.\\
 
 \section{Yahoo (2013, 2014)}
@@ -307,7 +316,7 @@ Nel periodo prossimo all'acquisto di Yahoo, Verizon subisce un calo del 6\%. Oss
 \subsection{Note}
 \begin{enumerate}
     \item la fonte dei grafici storici di yahoo \`e \href{https://companiesmarketcap.com/yahoo/stock-price-history}{https://companiesmarketcap.com/}, in quanto non \`e stato possibile procurarsi dati pi\`u precisi di una azienda il cui ticker non esiste pi\`u;
-    \item la gestione delle comunicazioni da parte dell'azienda \`e stata tardiva a dir poco, contribuendo ad aggravare la posizione dell'azienda nei confronti dell'opinione pubblica e della legge.
+    \item la gestione delle comunicazioni da parte dell'azienda \`e stata tardiva a dir poco, contribuendo ad aggravarne la posizione nei confronti dell'opinione pubblica e della legge.
 \end{enumerate}
 \section{Uber (2016, 2022)}
 \subsection{2016}
@@ -318,7 +327,7 @@ L'azienda, oltre al riscatto pagato agli hacker per eliminare i dati rubati, ha 
 \subsubsection{Impatto indiretto}
 Al tempo l'azienda non era quotata, quindi non \`e possibile analizzare questo aspetto, se non osservando il caso del 2022.\\
 \subsubsection{Note}
-Una aggravante \`e stata sicuramente la gestione consapevolmente ingannevole, per esempio rivel\`o l'esistenza del \textit{breach} a SoftBank, permettendo poi che comprasse una buona parte della compagnia a prezzo ribassato\cite{Uber_plusEquifaxAndYahoo}.\\   
+Una aggravante \`e stata sicuramente la gestione consapevolmente ingannevole. Rivel\`o per esempio  l'esistenza del \textit{breach} a SoftBank, permettendo poi che comprasse una buona parte della compagnia a prezzo ribassato\cite{Uber_plusEquifaxAndYahoo}.\\   
 \subsection{2022}
 \subsubsection{Descrizione}
 Tramite ingegneria sociale l'attaccante \`e riuscito ad entrare nel sistema di condivisione di informazioni aziendali Slack, con conseguente arresto forzato di alcuni servizi da parte dell'azienda il 13 settembre 2022\cite{Uber_2022}.\\
@@ -344,16 +353,16 @@ Per tornare in pari ci vogliono pi\`u di sette mesi, indice che i precedenti att
 \end{figure}
 
 \subsubsection{Note}
-Il primo data breach e le sue conseguenze sono servite a Uber per cambiare approccio alla sicurezza e migliorato diversi aspetti\cite{Uber_2022}.
+Il primo \textit{data breach} e le sue conseguenze sono servite a Uber per cambiare approccio alla sicurezza e migliorare diversi aspetti\cite{Uber_2022}.
 
 \section{FedEx - NotPetya (2017)}
 \subsection{Descrizione}
-Il \textit{ransomware} NotPetya fu un attacco diffuso su larga scala, con epicentro in Ucraina, a giugno del 2017.Sua  peculiarit\`a era di non essere stato concepito per scopi di lucro, quanto pi\`u invece per causare disordine e distruzione\cite{FedEx_evolutionOfRansom}, secondo un rapporto della Casa Bianca i danni ammontarono complessivamente a \$10 miliardi\cite{FedEx_wired}.\\
+Il \textit{ransomware} NotPetya fu un attacco diffuso su larga scala, con epicentro in Ucraina, a giugno del 2017. Sua  peculiarit\`a era di non essere stato concepito per scopi di lucro, quanto pi\`u invece per causare disordine e distruzione\cite{FedEx_evolutionOfRansom}, secondo un rapporto della Casa Bianca i danni ammontarono complessivamente a \$10 miliardi\cite{FedEx_wired}.\\
 In questo contesto, l'azienda FedEx Corporation, che aveva da poco fatto acquisizioni in Europa (TNT Express), affront\`o grossi disservizi nel vecchio continente che complicarono i processi di assimilazione\cite{FedEx_10K_report_2018}.\\
 \subsection{Impatto diretto}
 Nel bilancio depositato a SEC si stimano le perdite intorno ai \$400 milioni che rallentarono la crescita durante il primo quarto dell'anno fiscale (giugno-agosto 2017).\\
 \subsection{Impatto indiretto}
-Essendo l'azienda distribuita, e in forte crescita negli Stati Uniti, l'impatto distruttivo di NotPetya non \`e roboante come ci si aspetterebbe da uno dei pi\`u costosi attacchi della storia. Di fatti, dal 27 giugno 2017 (giorno dell'attacco) le azioni crescono ed iniziano una discesa solo qualche tempo dopo, scendendo fino a -5\%.\\
+Essendo l'azienda distribuita, e in forte crescita negli Stati Uniti, l'impatto distruttivo di NotPetya non \`e clamoroso quanto ci si aspetterebbe da uno dei pi\`u costosi attacchi della storia. Di fatti, dal 27 giugno 2017 (giorno dell'attacco) le azioni crescono ed iniziano una discesa solo qualche tempo dopo, scendendo fino a -5\%.\\
 \begin{figure}[H] 
 \begin{center} 
 \includegraphics[width=10cm]{figures/fedex_short.png} 
@@ -361,7 +370,7 @@ Essendo l'azienda distribuita, e in forte crescita negli Stati Uniti, l'impatto 
 \end{center}
 \end{figure}
 
-Come gi\`a discusso ci sono segnali di una ripresa abbastanza forte, che in mancanza dell'attacco, sarebbero potuti essere lo specchio di una crescita importante.
+Come gi\`a discusso ci sono segnali di una ripresa abbastanza forte, che in mancanza dell'attacco, sarebbero potuti essere lo specchio di una crescita  ancora pi\`u importante.
 
 \begin{figure}[H] 
 \begin{center} 
@@ -399,7 +408,7 @@ Sul lungo periodo l'azienda fatica a risollevarsi, complici le pesanti sanzioni 
 \end{figure}
 
 \subsection{Note}
-Pare che il fatto fosse noto alla dirigenza gi\`a da inizio agosto 2017\cite{Uber_plusEquifaxAndYahoo} \`e stata, insieme al tipo di informazioni perse, una pesante aggravante in ambito legale.\\
+Pare che il fatto che il \textit{breach} fosse noto alla dirigenza gi\`a da inizio agosto 2017\cite{Uber_plusEquifaxAndYahoo} sia stata, insieme al tipo di informazioni perse, una pesante aggravante in ambito legale.\\
 \section{British Airways (2018)}
 \subsection{Descrizione}
 Il \textit{data breach}, attuato tramite l'iniezione di 22 linee di codice Javascript malevolo via URL (\textit{cross site scripting}, XSS), che colp\`i la compagnia aerea del Regno Unito, British Airways, venne reso pubblico il 6 settembre 2018 da un comunicato pubblico del \textit{National CyberSecurity Centre}. Le vittime, le cui stime iniziali ne dichiaravano $380\,000$, si scoprono ad ottobre essere ben $565\,000$, di cui sono trapelati nomi, email e informazioni delle carte di credito.\cite{BritAir} 
@@ -427,7 +436,7 @@ Nel lungo periodo le azioni risentono del danno di immagine fino all'inizio del 
 
 \section{Marriot International (2018)}
 \subsection{Descrizione}
-L'attacco si distribuisce su un ampio lasso di tempo: nel 2014, tramite accesso fisico ad un terminale con permessi di amministratore, viene installato un \textit{malware} nella rete di Starwood, agenzia alberghiera statunitense. Dopo aver trovato la chiave di decrittazione dei database e aver esfiltrato i dati, gli attaccanti cifrarono nuovamente le informazioni per non lasciare tracce. Cos\`i fu anche dopo l'acquisizione di Starwood da parte di Marriott International nel 2016, tanto da passare inosservata fino all'8 settembre 2018. Seguirono investigazioni che culminarono nella dichiarazione del 30 novembre 2018, in cui si rivelava la diffusione di informazioni di approssimativamente 500 milioni di clienti in tutto il mondo\cite{Marriott_ResGate}\cite{Marriott_customer_perception}.\\ 
+L'attacco si distribuisce su un ampio lasso di tempo: nel 2014, tramite accesso fisico ad un terminale con permessi di amministratore, viene installato un \textit{malware} nella rete di Starwood, agenzia alberghiera statunitense. Dopo aver trovato la chiave di decrittazione dei database e aver esfiltrato i dati, gli attaccanti cifrarono nuovamente le informazioni per non lasciare tracce. Rimasero tali anche dopo l'acquisizione di Starwood da parte di Marriott International nel 2016, tanto che l'attacco pass\`o  inosservato fino all'8 settembre 2018. Seguirono investigazioni che culminarono nella dichiarazione del 30 novembre 2018, in cui si rivelava la diffusione di informazioni di approssimativamente 500 milioni di clienti in tutto il mondo\cite{Marriott_ResGate}\cite{Marriott_customer_perception}.\\ 
 \subsection{Impatto diretto}
 Come spese di riparazione interne Marriott dichiara \$30 milioni \cite{Marriott_ResGate}, in aggiunta pag\`o anche una multa di \textsterling18,4 milioni al Regno Unito \cite{Marriott_actual_fine}, sebbene  inizialmente le cifre dichiarate fossero intorno ai \textsterling99 milioni.\\ 
 \subsection{Impatto indiretto}
@@ -450,7 +459,7 @@ Negli anni successivi torna a crescere fino ad inizio 2020, anche qui, si suppon
 \end{figure}
 
 \subsection{Note}
-La crisi \`e stata generata da errori nel controllo dei sistemi informativi e della rete dell'a societ\`a acquisita, evidenziando come l'espansione di un'azienda in tal modo sia fonte di vulnerabilit\`a talvolta inaspettate. Per quanto l'azienda abbia provato a scaricare la responsabilit\`a dell'accaduto altrove, risulta evidente come questo sia un compito cruciale da svolgere durante grandi o piccole operazioni di fusione.\\ 
+La crisi \`e stata generata da errori nel controllo dei sistemi informativi e della rete della societ\`a acquisita, evidenziando come l'espansione di un'azienda in tal modo sia fonte di vulnerabilit\`a talvolta inaspettate. Per quanto quest'ultima abbia provato a scaricare la responsabilit\`a dell'accaduto altrove, risulta evidente quanto sia in realt\`a un compito cruciale da svolgere durante grandi o piccole operazioni di fusione.\\ 
 \section{Capital One (2019)}
 \subsection{Descrizione}
 La holding bancaria Capital One Financial Corporation scopre, tramite una mail proveniente da un esterno di un \textit{data breach} che ha interessato 100 milioni di cittadini statunitensi e 6 milioni canadesi, pubblicher\`a quindi un comunicato al riguardo il 29 luglio 2019\cite{CapitalOne_case_study}.
@@ -539,7 +548,7 @@ Nel tentativo di recuperare i dati rubati, Change Healthcare, ha pagato \$22 mil
 A questo si aggiungeranno le spese legali dei processi in corso. \\
 Come impatti diretti, in un report sul terzo quarto dell'anno fiscale 2024, viene stimato a \$1,521 miliardi il costo diretto per United Health.\\
 \subsection{Impatto indiretto}
-Essenndo UH un gruppo ampio, e che le ripercussioni dell'attacco sono arrivate prima ad aziende pi\`u piccole, con limitata capacit\`a di gestire la crisi, \`e plausibile che il grafico non riporti una discesa istantanea, ma un picco verso il basso che parte quasi una settimana dopo l'annuncio del \textit{breach}.\\
+Essenndo UH un gruppo ampio, e che le ripercussioni dell'attacco sono arrivate prima ad aziende pi\`u piccole, con limitata capacit\`a di gestire la crisi, \`e quindi ragionevole che il grafico non riporti una discesa istantanea, ma un picco verso il basso che parte quasi una settimana dopo l'annuncio del \textit{breach}.\\
 La perdita nel breve termine si assesta comunque tra il 10\% e il 5\%.\\
 \begin{figure}[H] 
 \begin{center} 
@@ -563,14 +572,15 @@ Dopo luglio 2024 l'azienda ha iniziato il recupero, ma ad oggi pare in una crisi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Analisi dettagliata del precedente capitolo 
-\chapter{Analisi dei dati aggregati}
+\chapter{Analisi dei dati aggregati}\label{chap:analisys}
 
 Raccolgo in una tabella le analisi che si possono fare riguardo ai casi presentati, usando l'EBITDA degli anni fiscali degli attacchi per mettere in prospettiva i costi diretti (per le aziende quotate).
 
 
 \begin{table}[H]
-    \centering
-    \begin{tabular}{|p{3,5cm}|c|p{3cm}|p{3,2cm}|p{3,2cm}|}
+    \noindent
+    \makebox[\textwidth]{%
+    \begin{tabular}{|p{3,5cm}|c|p{3cm}|p{3,2cm}|p{2,7cm}|}
         \hline
         \textbf{Nome soggetto colpito} & \textbf{Anno} & \textbf{Tipo di attacco} & \textbf{Costo diretto  in 
  milioni di\$ (c.d. / EBITDA )} & \textbf{Effetto sulle azioni}\\
@@ -605,7 +615,8 @@ Raccolgo in una tabella le analisi che si possono fare riguardo ai casi presenta
          \hline
          Change Healthcare & 2024 & ransomware, data breach & $1\,521$  (4,2\% \cite{unh_2024_10k}) & -5\% -- -10\% \\
          \hline
-    \end{tabular}
+    \end{tabular}%
+    }
     \caption{Tabella comparativa}
     \label{tab:analisys}
 \end{table}
@@ -670,11 +681,11 @@ Quanto detto prima non si applica al percepito e alla reazione dei mercati finan
 \chapter{Conclusioni}
 
 Lo studio evidenzia una controtendenza rispetto all'effettiva crescita del 
-costo degli attacchi informatici menzionata precedentemente e una crescente 
+costo degli attacchi informatici menzionata precedentemente, una crescente 
 propensione a crolli considerevoli nel valore di mercato e l'incremento
-nel tempo del numero di attacchi \textit{ransomware}, sebbene una valutazione
-su un campione cos\`i ridotto sia esposta ad errori.\\
-\`E possibile interpretare questo dato come una minore propensione o 
+nel tempo del numero di attacchi \textit{ransomware}.\\
+Sebbene una valutazione su un campione cos\`i ridotto sia esposta ad errori
+\`e possibile interpretare questi dati come una minore propensione o 
 minore efficacia degli hacker negli attacchi a grandi aziende che si
 dimostrano sempre pi\`u preparate. Ma se comunque il costo complessivo 
 \`e in fortissima crescita \cite{cybercrime_magazine} il risultato \`e 
@@ -682,11 +693,12 @@ un danno maggiore per enti collegati o un aumento del numero assoluto di
 attacchi ad aziende pi\`u piccole che spesso non si interessano sufficientemente
  o non hanno i mezzi adeguati.\\
 A fronte di ci\`o risulta evidentemente necessario potenziare per qualunque
-azienda la propria copertura in ambito di sicurezza informatica. In italia,
-dove la maggioranza delle aziende sono piccole o medie imprese, sarebbero
-probabilmente efficaci degli incentivi statali che, aiutando lo sviluppo
-di un livello adeguato di protezione in maniera capillare, permetterebbe
-di ridurre considerevolmente anche i danni agli enti connessi.
+azienda la propria copertura in ambito di sicurezza informatica.\\
+\\
+In italia, dove la maggioranza delle aziende sono piccole o medie imprese, 
+sarebbero probabilmente efficaci degli incentivi statali che, aiutando lo 
+sviluppo di un livello adeguato di protezione in maniera capillare,
+permetterebbe di ridurre considerevolmente anche i danni agli enti connessi.
 
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
