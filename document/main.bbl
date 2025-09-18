@@ -72,10 +72,18 @@ B.~Quinn and C.~Arthur. (2011, Apr.) Playstation network hackers access data of
 E.~U. J{\o}rgensen, ``The stakeholder attributions of corporate crisis
   responsibility following a cyber attack,'' 2018.
 
+\bibitem{macrotrends_sony}
+{Macrotrends}, ``{Sony - 45 Year Stock Price History | SONY},''
+  \url{https://www.macrotrends.net/stocks/charts/SONY/sony/stock-price-history}.
+
 \bibitem{Target}
 M.~Plachkinova and C.~Maurer, ``Teaching case: Security breach at target,''
   \emph{Journal of Information Systems Education}, vol.~29, no.~1, pp. 11--20,
   winter 2018.
+
+\bibitem{macrotrends_target}
+{Macrotrends}, ``{Target - 52 Year Stock Price History | TGT},''
+  \url{https://www.macrotrends.net/stocks/charts/TGT/target/stock-price-history}.
 
 \bibitem{SonyPic_buzzfeed}
 \BIBentryALTinterwordspacing
@@ -107,6 +115,14 @@ S.~Thielman. (2016, Dec.) Yahoo hack: 1bn accounts compromised by biggest data
   \url{https://www.theguardian.com/technology/2016/dec/14/yahoo-hack-security-of-one-billion-accounts-breached}
 \BIBentrySTDinterwordspacing
 
+\bibitem{compMarketCap_yahoo}
+{CompaniesMarketCap}, ``{Stock price history for Yahoo Inc. (YHOO)},''
+  \url{https://companiesmarketcap.com/yahoo/stock-price-history}.
+
+\bibitem{macrotrends_verizon}
+{Macrotrends}, ``{Verizon - 42 Year Stock Price History | VZ},''
+  \url{https://www.macrotrends.net/stocks/charts/VZ/verizon/stock-price-history}.
+
 \bibitem{Uber_plusEquifaxAndYahoo}
 J.~M. Robbins and A.~M. Sechooler, ``Once more unto the breach: What the
   equifax and uber data breaches reveal about the intersection of information
@@ -118,6 +134,10 @@ K.~Joonas, A.~Y. Mahfouz, A.~Banks, D.~Murphy, T.~Johnson, J.~Napper, and
   L.~Luellin, ``Data breach in the service sector: Problems and solutions,'' in
   \emph{Proceedings of the Twenty-Second AIMS International Conference on
   Management}.\hskip 1em plus 0.5em minus 0.4em\relax AIMS International, 2022.
+
+\bibitem{macrotrends_uber}
+{Macrotrends}, ``{Uber Technologies - 6 Year Stock Price History | UBER},''
+  \url{https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history}.
 
 \bibitem{FedEx_evolutionOfRansom}
 U.~K.~A. Bangalore~Ghousekhan, ``The evolution of ransomware: A case study of
@@ -140,6 +160,10 @@ A.~Greenberg. (2018, Aug.) The untold story of notpetya, the most devastating
   \url{https://www.sec.gov/Archives/edgar/data/1048911/000156459018016877/fdx-10k_20180531.htm}
 \BIBentrySTDinterwordspacing
 
+\bibitem{macrotrends_fedex}
+{Macrotrends}, ``{FedEx - 41 Year Stock Price History | FDX},''
+  \url{https://www.macrotrends.net/stocks/charts/FDX/fedex/stock-price-history}.
+
 \bibitem{Equifax_case_study_2}
 J.~Thomas, ``A case study analysis of the equifax data breach 1 a case study
   analysis of the equifax data breach,'' \emph{ResearchGate}, 12 2019.
@@ -152,10 +176,18 @@ J.~Thomas, ``A case study analysis of the equifax data breach 1 a case study
   \url{https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach}
 \BIBentrySTDinterwordspacing
 
+\bibitem{macrotrends_equifax}
+{Macrotrends}, ``{Equifax - 45 Year Stock Price History | EFX},''
+  \url{https://www.macrotrends.net/stocks/charts/EFX/equifax/stock-price-history}.
+
 \bibitem{BritAir}
 M.~Aljaidi, ``A comprehensive technical analysis of url redirect attacks: A
   case study of british airways data breach,'' in \emph{2023 24th International
   Arab Conference on Information Technology (ACIT)}, 2023, pp. 1--5.
+
+\bibitem{lse_britair}
+{London Stock Exchange}, ``{International Consolidated Airlines Group SA},''
+  \url{https://www.londonstockexchange.com/stock/IAG/international-consolidated-airlines-group-s-a/company-page}.
 
 \bibitem{Marriott_ResGate}
 R.~Denuwan, ``Marriott international data breach,'' \emph{ReserchGate}, 07
@@ -177,6 +209,10 @@ J.~E. Park, A.~Reed, and A.~Fan. (2023) Who's the real victim? marriott's
   \url{https://www.gdprregister.eu/news/ico-fine-marriot/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{macrotrends_marriott}
+{Macrotrends}, ``{Marriott - 32 Year Stock Price History | MAR},''
+  \url{https://www.macrotrends.net/stocks/charts/MAR/marriott/stock-price-history}.
+
 \bibitem{CapitalOne_case_study}
 \BIBentryALTinterwordspacing
 N.~Novaes~Neto, S.~E. Madnick, A.~Moraes G.~de Paula, and N.~Malara~Borges.
@@ -192,6 +228,10 @@ S.~K. Gainey and T.~C. Taylor. (2022) Capital one reaches \$190 million
   di blog di uno studio legale specializzato. [Online]. Available:
   \url{https://www.mvalaw.com/data-points/capital-one-reaches-190-million-settlement-in-connection-with}
 \BIBentrySTDinterwordspacing
+
+\bibitem{macrotrends_capitalone}
+{Macrotrends}, ``{Capital One Financial - 31 Year Stock Price History | COF},''
+  \url{https://www.macrotrends.net/stocks/charts/COF/capital-one-financial/stock-price-history}.
 
 \bibitem{SolarWinds_lessons}
 M.~Marelli, ``The solarwinds hack: Lessons for international humanitarian
@@ -215,6 +255,10 @@ R.~Alkhadra, J.~Abuzaid, M.~AlShammari, and N.~Mohammad, ``Solar winds hack:
   October 28, 2022}. [Online]. Available:
   \url{https://www.sec.gov/ix?doc=/Archives/edgar/data/1739942/000173994222000091/swi-20221028.htm}
 \BIBentrySTDinterwordspacing
+
+\bibitem{compMarketCap_solarwinds}
+{CompaniesMarketCap}, ``{Stock price history for SolarWinds (SWI)},''
+  \url{https://companiesmarketcap.com/solarwinds/stock-price-history}.
 
 \bibitem{ColonialPipe_IEEE}
 J.~Beerman, D.~Berent, Z.~Falter, and S.~Bhunia, ``A review of colonial
@@ -251,6 +295,10 @@ S.~Schappert. (2023, ottobre) Titans in crisis: unraveling the mgm and caesars
   \url{https://www.mgmdatasettlement.com/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{macrotrends_mgm}
+{Macrotrends}, ``{MGM Resorts - 37 Year Stock Price History | MGM},''
+  \url{https://www.macrotrends.net/stocks/charts/MGM/mgm-resorts/stock-price-history}.
+
 \bibitem{ChHealth_hipaa}
 \BIBentryALTinterwordspacing
 {HIPAA Journal}. (2025, Aug.) {Change Healthcare Increases Ransomware Victim
@@ -265,6 +313,10 @@ A.~Fliegelman and D.~Stemp, ``The cyberattack on change healthcare: Lessons for
   Treasury, Tech. Rep. OFR Brief 24-05, Nov. 2024. [Online]. Available:
   \url{https://www.financialresearch.gov/briefs/files/OFRBrief-24-05-change-healthcare-cyberattack.pdf}
 \BIBentrySTDinterwordspacing
+
+\bibitem{macrotrends_unhealth}
+{Macrotrends}, ``{UnitedHealth Group - 41 Year Stock Price History | UNH},''
+  \url{https://www.macrotrends.net/stocks/charts/UNH/unitedhealth-group/stock-price-history}.
 
 \bibitem{sony_q2_2012_20F}
 \BIBentryALTinterwordspacing
