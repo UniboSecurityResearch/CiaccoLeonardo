@@ -33,7 +33,7 @@
 \usepackage[pass]{geometry}
 
 %comandi per l'impostazione della pagina, vedi il manuale della libreria fancyhdr per ulteriori delucidazioni
-\pagestyle{fancy}\addtolength{\headwidth}{20pt}
+\pagestyle{plain}\addtolength{\headwidth}{20pt}
 \setlength{\headheight}{14.49998pt}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection \ #1}{}}
@@ -59,7 +59,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ABSTRACT 
 %\clearpage{\pagestyle{empty}\cleardoublepage}
-%\pagenumbering{roman}
+\pagenumbering{roman}
 %\renewcommand{\abstractname}{Abstract}
 %\phantomsection
 %\addcontentsline{toc}{chapter}{Abstract}
@@ -113,11 +113,12 @@ Indice}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % INTRODUZIONE
-\newpage
+\clearpage
+\pagenumbering{arabic} %mette i numeri arabi
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Introduzione} 
 \lhead[\fancyplain{}{\bfseries\thepage}]{\fancyplain{}{\bfseries\rightmark}}
-\pagenumbering{arabic} %mette i numeri arabi
+
 
 Il pericolo degli attacchi informatici \`e tristemente noto, ci\`o che viene
 spesso trascurato e l'impatto concreto e misurabile sui piani economico e finanziario. 
@@ -425,7 +426,7 @@ Pare che il fatto che il \textit{breach} fosse noto alla dirigenza gi\`a da iniz
 \subsection{Descrizione}
 Il \textit{data breach}, attuato tramite l'iniezione di 22 linee di codice Javascript malevolo via URL (\textit{cross site scripting}, XSS), che colp\`i la compagnia aerea del Regno Unito, British Airways, venne reso pubblico il 6 settembre 2018 da un comunicato pubblico del \textit{National CyberSecurity Centre}. Le vittime, le cui stime iniziali ne dichiaravano $380\,000$, si scoprono ad ottobre essere ben $565\,000$, di cui sono trapelati nomi, email e informazioni delle carte di credito \cite{BritAir}.\\ 
 \subsection{Impatto diretto}
-L'azienda ha sostenuto una multa di \$20 milioni come conseguenza dell'attacco. \cite{BritAir} La pena ridotta \`e probabilmente una concessione dovuta alla successiva crisi causata dal COVID-19.\\
+L'azienda ha sostenuto una multa di \$20 milioni come conseguenza dell'attacco \cite{BritAir}. La pena ridotta \`e probabilmente una concessione dovuta alla successiva crisi causata dal COVID-19.\\
 \subsection{Impatto indiretto}
 Notiamo in Figura \ref{fig:britair1} \cite{lse_britair} che il gruppo, come evidenziato nelle fonti \cite{BritAir}, ha una perdita quasi immediata del 2\%, e che le azioni continuano a scendere durante tutto il mese successivo.
 
@@ -575,8 +576,8 @@ Dopo luglio 2024 l'azienda ha iniziato il recupero, ma ad oggi \`e evidente in F
 \end{center}
 \end{figure}
 
-\newpage
-%\clearpage{pagestyle{empty}\cleardoublepage}
+
+
 
 
 
@@ -584,16 +585,15 @@ Dopo luglio 2024 l'azienda ha iniziato il recupero, ma ad oggi \`e evidente in F
 % Analisi dettagliata del precedente capitolo 
 \chapter{Analisi dei dati aggregati}\label{chap:analisys}
 
-Raccolgo nella Tabella \ref{tab:analisys} le analisi che si possono fare riguardo ai casi presentati, usando l'EBITDA degli anni fiscali degli attacchi per mettere in prospettiva i costi diretti (per le aziende quotate).\\
-\newpage
-
 \begin{table}[H]
     \noindent
+    \centering
     \makebox[\textwidth]{%
-    \begin{tabular}{|p{3,5cm}|c|p{3cm}|p{3,2cm}|p{2,7cm}|}
+    \centering
+    \small
+    \begin{tabular}{|p{3,5cm}|c|p{4,5cm}|p{4,7cm}|p{2,9cm}|}
         \hline
-        \textbf{Nome soggetto colpito} & \textbf{Anno} & \textbf{Tipo di attacco} & \textbf{Costo diretto  in 
- milioni di\$ (c.d. / EBITDA )} & \textbf{Perdita di valore percentuale delle azioni}\\
+        \textbf{Nome soggetto colpito} & \textbf{Anno} & \textbf{Tipo di attacco} & \textbf{Costo diretto in mil di \$ (c.d./EBITDA)} & \textbf{Perdita valore delle azioni}\\
         \hline
         Sony Playstation Network  & 2011 & data breach & 171  (14,82\% \cite{sony_q2_2012_20F}) & 3\% - 5\% \\
         \hline
@@ -611,7 +611,7 @@ Raccolgo nella Tabella \ref{tab:analisys} le analisi che si possono fare riguard
          \hline
          Equifax & 2017 & data breach & circa 625  (56,2\% \cite{equifax_2017_10k}) & 8,2\% - 20\% \\
          \hline
-         British Airways & 2018 & data breach via XSS & 26  (0,48\% \cite{iag_2019_report}) & 2\% \\
+         British Airways & 2018 & data breach (XSS) & 26  (0,48\% \cite{iag_2019_report}) & 2\% \\
          \hline
          Marriott International & 2018 & data breach via phisical malware injection & 53,92  (2,05\% \cite{marriott_2018_10k}) & 5\% - 17\% \\
          \hline
@@ -631,6 +631,11 @@ Raccolgo nella Tabella \ref{tab:analisys} le analisi che si possono fare riguard
     \label{tab:analisys}
 \end{table}
 
+
+Sono raccolte nella Tabella \ref{tab:analisys} le analisi che si possono fare riguardo ai casi presentati, usando l'EBITDA degli anni fiscali degli attacchi per mettere in prospettiva i costi diretti (per le aziende quotate).\\
+Possiamo notare come le premesse iniziali riguardanti un calo dele azioni del 5\% siano state rispettate in larga parte \cite{accenture2010}.\\
+
+
 \section{Note} 
 \begin{itemize}
     \item la maggior parte degli EBITDA che non sono esplicitati nei report, in quanto non obbligatorio a fini fiscali, sono ottenuti la maggior parte delle volte tramite  la formula\\ $EBITDA = Operating Income + Depreciacion\&Amortisation$
@@ -649,7 +654,7 @@ Raccolgo nella Tabella \ref{tab:analisys} le analisi che si possono fare riguard
     utilizzata la formula $ EBITDA = Earnings + Amortisation $
 \end{itemize}
 
-Possiamo notare come le premesse iniziali riguardanti un calo dele azioni del 5\% siano state rispettate in larga parte \cite{accenture2010}.\\
+
 
 \section{Dati linearizzati}
 \subsection{EBITDA}
