@@ -56,9 +56,10 @@
 \restoregeometry
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ABSTRACT 
-%\clearpage{\pagestyle{empty}\cleardoublepage}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \pagenumbering{roman}
 %\renewcommand{\abstractname}{Abstract}
 %\phantomsection
@@ -70,12 +71,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RINGRAZIAMENTI 
-\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
 \chapter*{Ringraziamenti}
 \phantomsection
 \addcontentsline{toc}{chapter}{Ringraziamenti}
-Grazie\\
-
+\begin{minipage}[t]{0.47\textwidth}
+{\normalsize{\it Grazie a chi mi sta vicino,\\
+chi quotidianamente,\\
+chi sporadicamente,\\
+vi penso e vi voglio bene}}
+\end{minipage}
 \newpage
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -124,15 +130,14 @@ Il pericolo degli attacchi informatici \`e tristemente noto, ci\`o che viene
 spesso trascurato e l'impatto concreto e misurabile sui piani economico e finanziario. 
 Oltre alle spese di ripristino concorrono al danno concreto anche perdita di fiducia, valore di mercato e stabilit\`a dell'organizzazione. 
 Si tratta di aspetti che potrebbero non trovare sufficiente spazio nelle analisi divulgative, ma che
-rappresentano una delle parti pi\`u rilevanti delle conseguenze di un attacco informatico.
+costituiscono un elemento cruciale delle conseguenze di un attacco informatico.
 
 
 Tramite l'analisi di 15 casi di studio, questo elaborato si propone di fornire un dato reale che aiuti a diffondere una 
-maggiore consapevolezza in materia. Nel capitolo \ref{chap:artState} vi \`e una analisi dello Stato dell'Arte che
-illustra il panorama degli attacchi informatici, fondamentale per avere gli strumenti necessari alla comprensione degli elementi base
-della sicurezza informatica, una cornice teorica con lo scopo di inquadrare al meglio i dati presentati a seguire.\\
-Saranno quindi sviscerati i singoli casi nel capitolo \ref{chap:attacks} prendendo in esame
-i costi diretti ed indiretti, insieme alle informazioni di contesto necessarie per interpretare i dati. 
+maggiore consapevolezza in materia. Nel capitolo \ref{chap:artState} si trova una analisi dello Stato dell'Arte che
+illustra il panorama degli attacchi informatici, \`e fondamentale per avere gli strumenti necessari alla comprensione degli elementi base
+della sicurezza informatica e funge da cornice teorica con lo scopo di inquadrare al meglio i dati presentati a seguire. Saranno quindi sviscerati i singoli casi nel capitolo \ref{chap:attacks}, prendendo in esame
+i costi diretti ed indiretti, insieme alle informazioni di contesto necessarie. 
 L'obiettivo sar\`a anche quello  di chiarire le dinamiche attraverso cui le conseguenze economiche si manifestano e 
 propagano nel tempo. Verranno successivamente messi  a confronto ed elaborati ulteriormente nel capitolo \ref{chap:analisys} con lo scopo di 
 far emergere con pi\`u chiarezza possibile l'evoluzione delle risposte finanziarie negli ultimi anni. 
@@ -151,7 +156,7 @@ Il presente capitolo mira a fornire le informazioni fondamentali, necessarie a c
     \item vulnerabilit\`a
     \item attacco
 \end{itemize}
-Con \textbf{rischio} si intende la possibilit\`a che azioni umane o eventi  abbiano un impatto su ci\`o a cui \`e attribuito valore. \`E quindi corretto affermare che si tratta di una grandezza, e come tale \`e quantificabile, \`e infatti direttamente proporzionale alla probabilit\`a di avvenimento e all'impatto che avrebbe sui beni colpiti. La valutazione del rischio, mirata alla sua gestione e controllo, parte dalla stima quanto pi\`u accurata di queste due variabili.\\
+Con \textbf{rischio} si intende la possibilit\`a che azioni umane o eventi  abbiano un impatto su ci\`o a cui \`e attribuito valore. \`E quindi corretto affermare che si tratta di una grandezza e, in quanto tale, \`e quantificabile, \`e infatti direttamente proporzionale alla probabilit\`a di avvenimento e all'impatto che avrebbe sui beni colpiti. La valutazione del rischio, mirata alla sua gestione e controllo, parte dalla stima quanto pi\`u accurata di queste due variabili.\\
 \\
 La \textbf{sicurezza} \`e il processo di contenimento del rischio che consiste essenzialmente nella cura di tre propriet\`a fondamentali: riservatezza (inaccessibilit\`a delle informazioni a chi non ha il permesso di consultarle), integrit\`a (garanzia di correttezza delle informazioni) e disponibilit\`a (possibilit\`a di accesso e utilizzo delle informazioni e i servizi offerti).\\
 \\
@@ -160,7 +165,7 @@ La \textbf{minaccia} consiste nella potenziale compromissione di una o pi\`u del
 \section{Tipologie di attacco}
 ENISA (Agenzia dell'Unione Europea per la Cybersicurezza) raggruppa gli attacchi informatici in otto categorie principali \cite{enisa_threat_landscape}.
 \subsection{Ransomware}
-Definito come un tipo di attacco in cui gli attori coinvolti prendono il controllo di un bene del bersaglio e chiedono un riscatto (in inglese \textit{ransom}) in cambio della restituzione. \`E un tipo di attacco  generalmente attuato per scopi economici, ma, essendo anche uno dei pi\`u diffusi evolve rapidamente, sia dal punto di vista delle tecniche di estorsione che degli obiettivi.\\
+Definito come un tipo di attacco in cui gli attori coinvolti prendono il controllo di un bene del bersaglio e chiedono un riscatto (in inglese \textit{ransom}) in cambio della restituzione. \`E un tipo di attacco  generalmente attuato per scopi economici, ma, essendo anche uno dei pi\`u diffusi evolve rapidamente, sia dal punto di vista delle tecniche di estorsione degli obiettivi.\\
 
 \subsection{Malware}
 Si tratta di un termine ombrello: descrive tutti i \textit{software} o \textit{firmware} con lo scopo di eseguire un processo non autorizzato sulla macchina ospitante il cui risultato \`e la compromissione di una delle tre propriet\`a della sicurezza.\\
@@ -259,7 +264,7 @@ Le comunicazioni furono tardive e poco precise, gli azionisti ebbero notizia del
 \section{Target (2013)}
 \subsection{Descrizione}
 Il caso di \textit{data breach} affrontato riguarda l'azienda di distribuzione Target, seconda negli Stati Uniti solamente a Walmart, e l'attacco che si \`e concluso con il furto di  informazioni, comprese informazioni di pagamento e carte di credito, di 70 milioni di clienti.\\
-Prime avvisaglie dell'ingresso di un malware nella rete arrivano il 30 novembre 2013, probabilmente avvenuto per via dell'utilizzo di password troppo semplici nei server aziendali, ma \`e dal 12 dicembre che, in seguito alla notifica del Dipartimento di Giustizia, iniziano le indagini congiunte. Verificatane l'entit\`a, la notizia viene resa di dominio pubblico il 19 dicembre 2013 \cite{Target}.\\
+Prime avvisaglie dell'ingresso di un \textit{malware} nella rete arrivano il 30 novembre 2013, probabilmente avvenuto per via dell'utilizzo di password troppo semplici nei server aziendali, ma \`e dal 12 dicembre che, in seguito alla notifica del Dipartimento di Giustizia, iniziano le indagini congiunte. Verificatane l'entit\`a, la notizia viene resa di dominio pubblico il 19 dicembre 2013 \cite{Target}.\\
 \subsection{Impatto diretto}
 Da quanto dichiarato nei bilanci SEC (\textit{Securities and Exchange Commission}), le spese dirette, tolti \$90 milioni coperti da assicurazione, ammontano a \$200 milioni \cite{Target}.
 \subsection{Impatto indiretto}
@@ -665,20 +670,22 @@ MGM Resorts e Change Healthcare sono ancora in corso, i valori corrispondenti so
 il minimo costo diretto che le compagnie affronteranno una volta terminato.
  Ci\`o viene corretto nel secondo grafico, ottenendo una linearizzazione che denuncia un calo meno pronunciato, pi\`u realistico,
 ma che non manca di disattendere parzialmente le aspettative iniziali.\\
+\captionsetup[subfigure]{list=true} 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{figures/ebit-date-1.png}
-        \caption{EBITDA nel tempo}
+        \caption[Grafico linearizzato EBITDA]{EBITDA nel tempo}
         \label{fig:ebit1}
     \end{subfigure}
     \begin{subfigure}{0.48\textwidth}
         \centering
     \includegraphics[width=1\linewidth]{figures/ebit-date-2.png}
-    \caption{EBITDA nel tempo corretto}
+    \caption[Grafico linearizzato EBITDA corretto]{EBITDA nel tempo corretto}
     \label{fig:ebit2}
     \end{subfigure}
+    \caption[Confronto EBITDA]{Confronto fra EBITDA e EBITDA corretto nel tempo}
 \end{figure}
 Il trend discendente evidenzia un calo dei costi diretti in relazione alla redditivit\`a dell'azienda, 
 suggerendo quindi che l'impatto economico diretto di un attacco informatico incide in misura minore sulla 
@@ -702,7 +709,7 @@ crescente della reputazione e della fiducia, beni immateriali ma di enorme  valo
 \begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{figures/stocks-date.png}
-    \caption{Perdita di valore delle azioni a breve termine nel tempo}
+    \caption[Grafico linearizzato azioni]{Perdita di valore delle azioni a breve termine nel tempo}
     \label{fig:stockloss}
 \end{figure}
 
